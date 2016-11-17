@@ -47,13 +47,13 @@
 
 ;;;###autoload
 (defcustom linum-format 'dynamic
-  "Format used to display line numbers. Either a format string
+    "Format used to display line numbers. Either a format string
 like \"%7d\", 'dynamic to adapt the width as needed, or a
 function that is called with a line number as its argument and
 should evaluate to a string to be shown on that line. See also
 `linum-before-numbering-hook'."
-  :group 'linum
-  :type 'sexp)
+    :group 'linum
+    :type 'sexp)
 
 (defface linum
   '((t :inherit (shadow default)))
@@ -61,11 +61,11 @@ should evaluate to a string to be shown on that line. See also
   :group 'linum)
 
 (defcustom linum-eager t
-  "Whether line numbers should be updated after each command.
+    "Whether line numbers should be updated after each command.
 The conservative setting `nil' might miss some buffer changes,
 and you have to scroll or press C-l to update the numbers."
-  :group 'linum
-  :type 'boolean)
+    :group 'linum
+    :type 'boolean)
 
 (defcustom linum-delay nil
   "Delay updates to give Emacs a chance for other changes."
@@ -78,18 +78,18 @@ and you have to scroll or press C-l to update the numbers."
   :lighter ""                           ; for desktop.el
   (if linum-mode
       (progn
-        (if linum-eager
-            (add-hook 'post-command-hook (if linum-delay
-                                             'linum-schedule
-                                           'linum-update-current) nil t)
-          (add-hook 'after-change-functions 'linum-after-change nil t))
-        (add-hook 'window-scroll-functions 'linum-after-scroll nil t)
-        ;; mistake in Emacs: window-size-change-functions cannot be local
-        (add-hook 'window-size-change-functions 'linum-after-size)
-        (add-hook 'change-major-mode-hook 'linum-delete-overlays nil t)
-        (add-hook 'window-configuration-change-hook
-                  'linum-after-config nil t)
-        (linum-update-current))
+	(if linum-eager
+	    (add-hook 'post-command-hook (if linum-delay
+					     'linum-schedule
+					   'linum-update-current) nil t)
+	  (add-hook 'after-change-functions 'linum-after-change nil t))
+	(add-hook 'window-scroll-functions 'linum-after-scroll nil t)
+	;; mistake in Emacs: window-size-change-functions cannot be local
+	(add-hook 'window-size-change-functions 'linum-after-size)
+	(add-hook 'change-major-mode-hook 'linum-delete-overlays nil t)
+	(add-hook 'window-configuration-change-hook
+		  'linum-after-config nil t)
+	(linum-update-current))
     (remove-hook 'post-command-hook 'linum-update-current t)
     (remove-hook 'post-command-hook 'linum-schedule t)
     (remove-hook 'window-size-change-functions 'linum-after-size)
@@ -124,8 +124,8 @@ and you have to scroll or press C-l to update the numbers."
       (setq linum-available linum-overlays)
       (setq linum-overlays nil)
       (save-excursion
-        (mapc #'linum-update-window
-              (get-buffer-window-list buffer nil 'visible)))
+	(mapc #'linum-update-window
+	      (get-buffer-window-list buffer nil 'visible)))
       (mapc #'delete-overlay linum-available)
       (setq linum-available nil))))
 
@@ -133,36 +133,36 @@ and you have to scroll or press C-l to update the numbers."
   "Update line numbers for the portion visible in window WIN."
   (goto-char (window-start win))
   (let ((line (line-number-at-pos))
-        (limit (window-end win t))
-        (fmt (cond ((stringp linum-format) linum-format)
-                   ((eq linum-format 'dynamic)
-                    (let ((w (length (number-to-string
-                                      (count-lines (point-min) (point-max))))))
-                      (concat "%" (number-to-string w) "d")))))
-        (width 0))
+	(limit (window-end win t))
+	(fmt (cond ((stringp linum-format) linum-format)
+		   ((eq linum-format 'dynamic)
+		    (let ((w (length (number-to-string
+				      (count-lines (point-min) (point-max))))))
+		      (concat "%" (number-to-string w) "d")))))
+	(width 0))
     (run-hooks 'linum-before-numbering-hook)
     ;; Create an overlay (or reuse an existing one) for each
     ;; line visible in this window, if necessary.
     (while (and (not (eobp)) (<= (point) limit))
       (let* ((str (if fmt
-                      (propertize (format fmt line) 'face 'linum)
-                    (funcall linum-format line)))
-             (visited (catch 'visited
-                        (dolist (o (overlays-in (point) (point)))
-                          (when (string= (overlay-get o 'linum-str) str)
-                            (unless (memq o linum-overlays)
-                              (push o linum-overlays))
-                            (setq linum-available (delete o linum-available))
-                            (throw 'visited t))))))
-        (setq width (max width (length str)))
-        (unless visited
-          (let ((ov (if (null linum-available)
-                        (make-overlay (point) (point))
-                      (move-overlay (pop linum-available) (point) (point)))))
-            (push ov linum-overlays)
-            (overlay-put ov 'before-string
-                         (propertize " " 'display `((margin left-margin) ,str)))
-            (overlay-put ov 'linum-str str))))
+		      (propertize (format fmt line) 'face 'linum)
+		    (funcall linum-format line)))
+	     (visited (catch 'visited
+			(dolist (o (overlays-in (point) (point)))
+			  (when (string= (overlay-get o 'linum-str) str)
+			    (unless (memq o linum-overlays)
+			      (push o linum-overlays))
+			    (setq linum-available (delete o linum-available))
+			    (throw 'visited t))))))
+	(setq width (max width (length str)))
+	(unless visited
+	  (let ((ov (if (null linum-available)
+			(make-overlay (point) (point))
+		      (move-overlay (pop linum-available) (point) (point)))))
+	    (push ov linum-overlays)
+	    (overlay-put ov 'before-string
+			 (propertize " " 'display `((margin left-margin) ,str)))
+	    (overlay-put ov 'linum-str str))))
       (forward-line)
       (setq line (1+ line)))
     (set-window-margins win width)))
@@ -170,9 +170,9 @@ and you have to scroll or press C-l to update the numbers."
 (defun linum-after-change (beg end len)
   ;; update overlays on deletions, and after newlines are inserted
   (when (or (= beg end)
-            (= end (point-max))
-            ;; TODO: use string-match-p with CVS or new release
-            (string-match "\n" (buffer-substring-no-properties beg end)))
+	    (= end (point-max))
+	    ;; TODO: use string-match-p with CVS or new release
+	    (string-match "\n" (buffer-substring-no-properties beg end)))
     (linum-update-current)))
 
 (defun linum-after-scroll (win start)
