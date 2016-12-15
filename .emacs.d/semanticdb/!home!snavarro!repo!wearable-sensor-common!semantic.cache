@@ -1,0 +1,35 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("argparse" include nil nil [17 32])
+            ("json" include nil nil [33 44])
+            ("os" include nil nil [45 54])
+            ("shutil" include nil nil [55 68])
+            ("subprocess" include nil nil [69 86])
+            ("sys" include nil nil [87 97])
+            ("parse_arguments" function (:arguments 
+              ( ("arg_list" variable nil (reparse-symbol function_parameters) [818 826]))              ) nil [798 3685])
+            ("prepare_build_dir" function (:arguments 
+              ( ("target" variable nil (reparse-symbol function_parameters) [3708 3714]))              ) nil [3686 3938])
+            ("does_cmake_need_to_be_run" function (:arguments 
+              ( ("target" variable nil (reparse-symbol function_parameters) [3969 3975]))              ) nil [3939 4061])
+            ("on_error" function nil nil [4062 4169])
+            ("print_status" function (:arguments 
+              ( ("current_status" variable nil (reparse-symbol function_parameters) [4187 4201]))              ) nil [4170 4268])
+            ("print_description" function (:arguments 
+              ( ("description" variable nil (reparse-symbol function_parameters) [4291 4302]))              ) nil [4269 4397])
+            ("main" function nil nil [4397 6122])
+            ("if" code nil nil [6123 6161]))          
+      :file "test_build_everything.py"
+      :pointmax 6161
+      :fsize 6160
+      :lastmodtime '(22593 33153 564918 275000)
+      :unmatched-syntax nil))
+  :file "!home!snavarro!repo!wearable-sensor-common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

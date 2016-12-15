@@ -1,0 +1,28 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_PREDEF_OS_WINDOWS_H" variable (:constant-flag t) nil [229 254])
+            ("boost/predef/version_number.h" include (:system-flag t) nil [256 296])
+            ("boost/predef/make.h" include (:system-flag t) nil [297 327])
+            ("BOOST_OS_WINDOWS" variable (:constant-flag t) nil [746 762])
+            ("BOOST_OS_WINDOWS_NAME" variable (:constant-flag t) nil [1198 1219])
+            ("boost/predef/detail/test.h" include (:system-flag t) nil [1249 1286]))          
+      :file "windows.h"
+      :pointmax 1353
+      :fsize 1352
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 1312 . 1352) (symbol 1287 . 1312) (string "\"Microsoft Windows\"" 1330 . 1351))
+      :lexical-table 
+        '(("BOOST_OS_WINDOWS_NAME" . ((string "\"Microsoft Windows\"" 1220 . 1239)))
+          ("BOOST_PREDEF_OS_WINDOWS_H")
+          ("BOOST_OS_WINDOWS" . ((symbol "BOOST_VERSION_NUMBER_NOT_AVAILABLE" 763 . 797)))
+          )
+))
+  :file "!usr!include!boost!predef!os!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

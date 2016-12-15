@@ -1,0 +1,47 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_PREPROCESSOR_CONFIG_CONFIG_HPP" variable (:constant-flag t) nil [839 875])
+            ("BOOST_PP_CONFIG_STRICT" variable (:constant-flag t) nil [919 941])
+            ("BOOST_PP_CONFIG_IDEAL" variable (:constant-flag t) nil [960 981])
+            ("BOOST_PP_CONFIG_MSVC" variable (:constant-flag t) nil [1002 1022])
+            ("BOOST_PP_CONFIG_MWCC" variable (:constant-flag t) nil [1041 1061])
+            ("BOOST_PP_CONFIG_BCC" variable (:constant-flag t) nil [1080 1099])
+            ("BOOST_PP_CONFIG_EDG" variable (:constant-flag t) nil [1118 1137])
+            ("BOOST_PP_CONFIG_DMC" variable (:constant-flag t) nil [1156 1175])
+            ("BOOST_PP_CONFIG_FLAGS" variable (:constant-flag t) nil [2480 2501])
+            ("BOOST_PP_CONFIG_EXTENDED_LINE_INFO" variable (:constant-flag t) nil [2653 2687])
+            ("BOOST_PP_CONFIG_ERRORS" variable (:constant-flag t) nil [2850 2872])
+            ("BOOST_PP_VARIADICS_MSVC" variable (:constant-flag t) nil [2934 2957])
+            ("BOOST_PP_VARIADICS" variable (:constant-flag t) nil [3890 3908])
+            ("BOOST_PP_VARIADICS" variable (:constant-flag t) nil [4121 4139])
+            ("BOOST_PP_VARIADICS" variable (:constant-flag t) nil [4789 4807]))          
+      :file "config.hpp"
+      :pointmax 4828
+      :fsize 4827
+      :lastmodtime '(22431 53996 0 0)
+      :unmatched-syntax '((punctuation 4818 . 4819) (punctuation 3911 . 3912) (punctuation 2993 . 2994) (punctuation 2923 . 2924) (punctuation 2896 . 2897) (punctuation 2894 . 2895) (punctuation 2731 . 2732) (punctuation 2700 . 2701) (punctuation 2698 . 2699) (punctuation 2595 . 2596) (punctuation 2552 . 2553) (punctuation 2550 . 2551) (punctuation 1185 . 1186) (punctuation 991 . 992) (punctuation 908 . 909) (punctuation 878 . 879) (punctuation 876 . 877) (punctuation 782 . 783) (punctuation 724 . 725) (punctuation 722 . 723) (punctuation 1 . 2))
+      :lexical-table 
+        '(("BOOST_PP_CONFIG_IDEAL" (spp-arg-list nil 981 . 983) . ((number "0x0002" 984 . 990)))
+          ("BOOST_PP_CONFIG_MSVC" (spp-arg-list nil 1022 . 1024) . ((number "0x0004" 1025 . 1031)))
+          ("BOOST_PP_CONFIG_FLAGS" (spp-arg-list nil 2501 . 2503) . ((semantic-list "(BOOST_PP_CONFIG_STRICT())" 2504 . 2530)))
+          ("BOOST_PP_VARIADICS_MSVC" . ((number "0" 2958 . 2959)))
+          ("BOOST_PREPROCESSOR_CONFIG_CONFIG_HPP")
+          ("BOOST_PP_CONFIG_EXTENDED_LINE_INFO" . ((number "0" 2688 . 2689)))
+          ("BOOST_PP_CONFIG_ERRORS" . ((number "1" 2873 . 2874)))
+          ("BOOST_PP_CONFIG_MWCC" (spp-arg-list nil 1061 . 1063) . ((number "0x0008" 1064 . 1070)))
+          ("BOOST_PP_CONFIG_EDG" (spp-arg-list nil 1137 . 1139) . ((number "0x0020" 1140 . 1146)))
+          ("BOOST_PP_CONFIG_DMC" (spp-arg-list nil 1175 . 1177) . ((number "0x0040" 1178 . 1184)))
+          ("BOOST_PP_CONFIG_STRICT" (spp-arg-list nil 941 . 943) . ((number "0x0001" 944 . 950)))
+          ("BOOST_PP_CONFIG_BCC" (spp-arg-list nil 1099 . 1101) . ((number "0x0010" 1102 . 1108)))
+          ("BOOST_PP_VARIADICS" . ((number "0" 4808 . 4809)))
+          )
+))
+  :file "!usr!include!boost!preprocessor!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

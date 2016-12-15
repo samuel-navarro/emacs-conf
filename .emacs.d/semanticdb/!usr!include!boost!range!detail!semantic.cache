@@ -1,0 +1,42 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_RANGE_DETAIL_EXTRACT_OPTIONAL_TYPE_HPP_INCLUDED" variable (:constant-flag t) nil [402 455])
+            ("boost/config.hpp" include (:system-flag t) nil [501 528])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [529 566])
+            ("boost/mpl/has_xxx.hpp" include (:system-flag t) nil [567 599])
+            ("BOOST_RANGE_EXTRACT_OPTIONAL_TYPE" variable (:constant-flag t) nil [824 857]))          
+      :file "extract_optional_type.hpp"
+      :pointmax 2019
+      :fsize 2018
+      :lastmodtime '(22431 53996 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_RANGE_EXTRACT_OPTIONAL_TYPE" (spp-arg-list ("a_typedef") 857 . 870) . 
+              ((symbol "BOOST_MPL_HAS_XXX_TRAIT_DEF" 902 . 929) (semantic-list "(a_typedef)" 929 . 940) (TEMPLATE "template" 984 . 992) (punctuation "<" 992 . 993) (TYPENAME "typename" 994 . 1002) (symbol "C" 1004 . 1005) (punctuation "," 1005 . 1006) (BOOL "bool" 1007 . 1011) (symbol "B" 1012 . 1013) (punctuation "=" 1014 . 1015) (symbol "BOOST_PP_CAT" 1016 . 1028) (semantic-list "(has_, a_typedef)" 1028 . 1045) (punctuation "<" 1045 . 1046) (symbol "C" 1046 . 1047) (punctuation ">" 1047 . 1048) (punctuation ":" 1048 . 1049) (punctuation ":" 1049 . 1050) (symbol "value" 1050 . 1055) (punctuation ">" 1056 . 1057) (STRUCT "struct" 1066 . 1072) (symbol "BOOST_PP_CAT" 1073 . 1085) (semantic-list "(extract_, a_typedef)" 1085 . 1106) (semantic-list "{}" 1148 . 1150) (punctuation ";" 1150 . 1151) (TEMPLATE "template" 1230 . 1238) (punctuation "<" 1238 . 1239) (TYPENAME "typename" 1240 . 1248) (symbol "C" 1249 . 1250) (punctuation ">" 1251 . 1252) (STRUCT "struct" 1312 . 1318) (symbol "BOOST_PP_CAT" 1319 . 1331) (semantic-list "(extract_, a_typedef)" 1331 . 1352) (punctuation "<" 1352 . 1353) (symbol "C" 1354 . 1355) (punctuation "," 1355 . 1356) (symbol "true" 1357 . 1361) (punctuation ">" 1362 . 1363) (semantic-list "{                                                                           \\
+        typedef BOOST_DEDUCED_TYPENAME C::a_typedef type;                       \\
+    }" 1394 . 1559) (punctuation ";" 1559 . 1560)))
+          ("BOOST_RANGE_DETAIL_EXTRACT_OPTIONAL_TYPE_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_RANGE_DETAIL_MSVC_HAS_ITERATOR_WORKAROUND_HPP" variable (:constant-flag t) nil [387 438]))          
+      :file "msvc_has_iterator_workaround.hpp"
+      :pointmax 3613
+      :fsize 3612
+      :lastmodtime '(22431 53996 0 0)
+      :unmatched-syntax '((punctuation 605 . 606) (symbol 602 . 605) (punctuation 601 . 602) (symbol 585 . 601) (punctuation 584 . 585) (symbol 579 . 584) (punctuation 578 . 579) (symbol 573 . 578) (punctuation 572 . 573) (symbol 567 . 571) (symbol 558 . 566) (symbol 555 . 557) (symbol 550 . 554) (symbol 543 . 549) (symbol 538 . 542) (symbol 533 . 537) (symbol 527 . 532) (punctuation 525 . 526))
+      :lexical-table 
+        '(("BOOST_RANGE_DETAIL_MSVC_HAS_ITERATOR_WORKAROUND_HPP")
+          )
+))
+  :file "!usr!include!boost!range!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

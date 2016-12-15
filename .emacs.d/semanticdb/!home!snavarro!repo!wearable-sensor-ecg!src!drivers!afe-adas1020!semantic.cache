@@ -1,0 +1,645 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("precomp.hpp" include nil nil [170 192])
+            ("Adas1020.hpp" include nil nil [193 216])
+            ("Adas1020ConfigurationOptions.hpp" include nil nil [217 260])
+            ("Adas1020RegisterAddresses.hpp" include nil nil [261 301])
+            ("ISpi.hpp" include nil nil [302 321])
+            ("ossystemtime.hpp" include nil nil [322 349])
+            ("Sqrt.hpp" include nil nil [350 369])
+            ("Trace.hpp" include nil nil [370 390])
+            ("algorithm" include (:system-flag t) nil [392 412])
+            ("cmath" include (:system-flag t) nil [413 429])
+            ("drivers::CAdas1020" using (:type ("drivers::CAdas1020" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [504 529])
+            ("drivers::adas1020" using (:type ("drivers::adas1020" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [530 564])
+            ("drivers::EcgAndRespirationFifoStatus_t" using (:type ("drivers::EcgAndRespirationFifoStatus_t" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [565 610])
+            ("drivers::EcgAndRespirationData_t" using (:type ("drivers::EcgAndRespirationData_t" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [611 650])
+            ("drivers::ECG_AND_RESPIRATION_DATA_BUFFER_SIZE" using (:type ("drivers::ECG_AND_RESPIRATION_DATA_BUFFER_SIZE" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [651 703])
+            ("drivers::FRONTEND_NUMBER_OF_ECG_LEADS" using (:type ("drivers::FRONTEND_NUMBER_OF_ECG_LEADS" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [704 748])
+            ("hw::ISpiAutoChipSelect" using (:type ("hw::ISpiAutoChipSelect" type
+                 (:prototype t
+                  :type "class")
+                  nil nil)) nil [749 778])
+            ("unnamed" type
+               (:members 
+                  ( ("ELECTRODE_OFF_RLD" variable
+                       (:constant-flag t
+                        :default-value "0x20"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [793 837])
+                    ("ELECTRODE_OFF_LA" variable
+                       (:constant-flag t
+                        :default-value "0x10"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [838 882])
+                    ("ELECTRODE_OFF_LL" variable
+                       (:constant-flag t
+                        :default-value "0x08"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [883 927])
+                    ("ELECTRODE_OFF_RA" variable
+                       (:constant-flag t
+                        :default-value "0x04"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [928 972])
+                    ("ELECTRODE_OFF_V1" variable
+                       (:constant-flag t
+                        :default-value "0x02"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [973 1017])
+                    ("ELECTRODE_OFF_V2" variable
+                       (:constant-flag t
+                        :default-value "0x01"
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1018 1062])
+                    ("getEnableState" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("enabledConfiguration" variable
+                               (:constant-flag t
+                                :type ("std::uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1092 1133])
+                            ("configurationParameters" variable
+                               (:constant-flag t
+                                :type ("std::uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1134 1178]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1064 1179])
+                    ("calculateMagnitude" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("coordinateI" variable
+                               (:constant-flag t
+                                :type ("std::int16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1214 1245])
+                            ("coordinateQ" variable
+                               (:constant-flag t
+                                :type ("std::int16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1246 1277]))                          
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1181 1278]))                  
+                :type "namespace")
+                nil [780 1281])
+            ("CAdas1020" function
+               (:constructor-flag t
+                :parent "CAdas1020"
+                :arguments 
+                  ( ("spiDevice" variable
+                       (:reference 1
+                        :type ("ISpiAutoChipSelect" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1343 1373]))                  
+                :type ("CAdas1020" type (:type "class") nil nil))
+                nil [1322 1509])
+            ("initialize" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1538 1582]))                  
+                :type "bool")
+                nil [1511 2860])
+            ("doSoftReset" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [2862 4123])
+            ("readEcgAndRespirationFifo" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("readLengthInBytes" variable
+                       (:constant-flag t
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4167 4203])
+                    ("" variable (:type ("std::uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4246 4271]))                  
+                :type "bool")
+                nil [4125 5930])
+            ("readSamples" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("readLengthInBytes" variable
+                       (:constant-flag t
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5960 5996])
+                    ("" variable (:type ("std::int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6025 6062]))                  
+                :type "void")
+                nil [5932 6540])
+            ("getEcgAndRespirationDataFromFrontEndDevice" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("ecgAndRespirationData" variable
+                       (:reference 1
+                        :type ("EcgAndRespirationData_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6601 6648]))                  
+                :type "void")
+                nil [6542 7891])
+            ("getPaceEvents" function
+               (:parent "CAdas1020"
+                :type ("std::uint8_t" type (:type "class") nil nil))
+                nil [7893 8675])
+            ("processPaceFifo" function
+               (:parent "CAdas1020"
+                :type ("std::uint8_t" type (:type "class") nil nil))
+                nil [8677 10444])
+            ("readEcgAndRespirationSamples" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("ecgAndRespirationData" variable
+                       (:reference 1
+                        :type ("drivers::EcgAndRespirationData_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10491 10547])
+                    ("numberOfBytes" variable
+                       (:constant-flag t
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10593 10625])
+                    ("bufferContainsRespirationData" variable
+                       (:constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [10671 10712]))                  
+                :type "void")
+                nil [10446 11770])
+            ("getGlobalStatus" function
+               (:parent "CAdas1020"
+                :type ("std::uint16_t" type (:type "class") nil nil))
+                nil [11772 11946])
+            ("getEcgAndRespirationFifoStatus" function
+               (:parent "CAdas1020"
+                :type ("EcgAndRespirationFifoStatus_t" type (:type "class") nil nil))
+                nil [11948 12433])
+            ("getAcLeadQuality" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("acLeadQuality" variable
+                       (:reference 1
+                        :type ("drivers::AcLeadQuality_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12468 12508]))                  
+                :type "bool")
+                nil [12435 13276])
+            ("getDcLeadOffStatus" function
+               (:parent "CAdas1020"
+                :type ("std::uint8_t" type (:type "class") nil nil))
+                nil [13278 14045])
+            ("checkIndividualElectrodeDcLeadOffState" function
+               (:methodconst-flag t
+                :parent "CAdas1020"
+                :arguments 
+                  ( ("dcLeadOffStatus" variable
+                       (:reference 1
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14102 14132])
+                    ("inputMask" variable
+                       (:constant-flag t
+                        :type ("ADI_DCLO_CONTROL_DCLO_IFAIL_POLARITY" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14188 14241])
+                    ("rightLegDriveMask" variable
+                       (:constant-flag t
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14297 14334])
+                    ("electrodeMask" variable
+                       (:constant-flag t
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14390 14423]))                  
+                :type "void")
+                nil [14047 14886])
+            ("getDcLeadOffStatusWith5Or6Electrodes" function
+               (:methodconst-flag t
+                :parent "CAdas1020"
+                :arguments 
+                  ( ("dcLeadOffStatus" variable
+                       (:reference 1
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14941 14971]))                  
+                :type "void")
+                nil [14888 16303])
+            ("getDcLeadOffStatusWith3Electrodes" function
+               (:methodconst-flag t
+                :parent "CAdas1020"
+                :arguments 
+                  ( ("dcLeadOffStatus" variable
+                       (:reference 1
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16355 16385]))                  
+                :type "void")
+                nil [16305 17209])
+            ("getECGfromDataFrame" function
+               (:methodconst-flag t
+                :parent "CAdas1020"
+                :arguments 
+                  ( ("" variable
+                       (:constant-flag t
+                        :type ("std::uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17247 17280])
+                    ("" variable (:type ("std::int32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17345 17365]))                  
+                :type "void")
+                nil [17211 17769])
+            ("getAdcValue" function
+               (:methodconst-flag t
+                :parent "CAdas1020"
+                :arguments 
+                  ( ("leadRegister" variable
+                       (:constant-flag t
+                        :type ("std::uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17808 17841]))                  
+                :type ("std::uint32_t" type (:type "class") nil nil))
+                nil [17771 18047])
+            ("convertAdcValueToSigned" function
+               (:methodconst-flag t
+                :parent "CAdas1020"
+                :arguments 
+                  ( ("adcValue" variable
+                       (:constant-flag t
+                        :type ("std::uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18097 18126]))                  
+                :type ("std::int32_t" type (:type "class") nil nil))
+                nil [18049 18572])
+            ("applyConfigurationUpdate" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [18574 19184])
+            ("detect" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [19186 19972])
+            ("configure" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20000 20044]))                  
+                :type "bool")
+                nil [19974 21121])
+            ("configureEcgBasicSettings" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21165 21209]))                  
+                :type "bool")
+                nil [21123 22026])
+            ("configureEcgDetailedSettings" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable (:type ("std::uint64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [22073 22111]))                  
+                :type "bool")
+                nil [22028 22716])
+            ("configureDcLeadOffDetection" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22762 22806]))                  
+                :type "bool")
+                nil [22718 23126])
+            ("configureRespiration" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23165 23209]))                  
+                :type "bool")
+                nil [23128 23528])
+            ("configurePace" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23560 23604]))                  
+                :type "bool")
+                nil [23530 25130])
+            ("enablePaceAnalogParts" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25170 25214]))                  
+                :type "bool")
+                nil [25132 26529])
+            ("enablePaceChannels" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26566 26610]))                  
+                :type "bool")
+                nil [26531 28067])
+            ("configurePaceChannel1" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [28069 29118])
+            ("configurePaceChannel2" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [29120 30169])
+            ("configurePaceChannel3" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [30171 31220])
+            ("configurePaceFifo" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [31222 31986])
+            ("getPaceStatus" function
+               (:parent "CAdas1020"
+                :type ("std::uint16_t" type (:type "class") nil nil))
+                nil [31988 32169])
+            ("readPaceFifo" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("readLengthInBytes" variable
+                       (:constant-flag t
+                        :type ("std::size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32200 32236])
+                    ("" variable (:type ("std::uint16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32237 32262]))                  
+                :type "bool")
+                nil [32171 33731])
+            ("isPowerLineNotchFilterEnabled" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [33733 34146])
+            ("enableReferenceDrive" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34185 34229]))                  
+                :type "bool")
+                nil [34148 36560])
+            ("enableEcgChannelSwitches" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [36603 36647]))                  
+                :type "void")
+                nil [36562 37955])
+            ("enableEcgChannelInputs" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [37996 38040]))                  
+                :type "void")
+                nil [37957 39302])
+            ("setEcgSampleRate" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [39337 39381]))                  
+                :type "void")
+                nil [39304 39647])
+            ("setPowerLineMainsFilterFrequency" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [39649 39964])
+            ("configureEcgRespirationFifo" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40010 40054]))                  
+                :type "bool")
+                nil [39966 43768])
+            ("configureDataReadyPin" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [43770 44214])
+            ("setDcLeadOffDetectionThresholds" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [44216 44771])
+            ("enableDcLeadOffDetection" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [44814 44858]))                  
+                :type "bool")
+                nil [44773 47409])
+            ("setRespirationControlSettings" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [47457 47501]))                  
+                :type "bool")
+                nil [47411 48624])
+            ("enableRespiration" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [48660 48704]))                  
+                :type "bool")
+                nil [48626 49167])
+            ("readAcQualityRegisters" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("" variable (:type ("std::int16_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [49208 49248]))                  
+                :type "bool")
+                nil [49169 50468])
+            ("configureAcLeadQuality" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [50509 50553]))                  
+                :type "bool")
+                nil [50470 53078])
+            ("clearPreviousConfiguration" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [53080 53700])
+            ("requestConfigurationUpdate" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [53702 54177])
+            ("wait" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("address" variable
+                       (:constant-flag t
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54200 54227])
+                    ("valueAddress" variable
+                       (:pointer 1
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54228 54262])
+                    ("mask" variable
+                       (:constant-flag t
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [54263 54288]))                  
+                :type "bool")
+                nil [54179 54862])
+            ("waitForCrystalOscillatorReady" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [54864 55070])
+            ("waitForFusesVerification" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [55072 55295])
+            ("waitForConfigurationUpdated" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [55297 55530])
+            ("turnOnCrystalOscillatorBias" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [55532 55898])
+            ("enableCrystalOscillator" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [55900 56243])
+            ("areClocksActive" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [56245 56513])
+            ("checkFuseCrcResult" function
+               (:parent "CAdas1020"
+                :type "bool")
+                nil [56515 56841])
+            ("enableClocks" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [56872 56916]))                  
+                :type "bool")
+                nil [56843 59336])
+            ("enableVoltages" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("configurationParameters" variable
+                       (:constant-flag t
+                        :type ("std::uint64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [59369 59413]))                  
+                :type "bool")
+                nil [59338 60957])
+            ("writeRegister" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("address" variable
+                       (:constant-flag t
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60989 61016])
+                    ("value" variable
+                       (:constant-flag t
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61017 61043]))                  
+                :type "bool")
+                nil [60959 61793])
+            ("readRegister" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("address" variable
+                       (:constant-flag t
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61824 61851])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [61852 61879]))                  
+                :type "bool")
+                nil [61795 63038])
+            ("writeAndVerifyRegister" function
+               (:parent "CAdas1020"
+                :arguments 
+                  ( ("address" variable
+                       (:constant-flag t
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63079 63106])
+                    ("value" variable
+                       (:constant-flag t
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [63107 63133]))                  
+                :type "bool")
+                nil [63040 63688])
+            ("unnamed" type
+               (:members 
+                  ( ("getEnableState" function
+                       (:arguments 
+                          ( ("enabledConfiguration" variable
+                               (:constant-flag t
+                                :type ("std::uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [64114 64155])
+                            ("configurationParameters" variable
+                               (:constant-flag t
+                                :type ("std::uint64_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [64156 64200]))                          
+                        :type ("std::uint8_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [64086 64280])
+                    ("calculateMagnitude" function
+                       (:arguments 
+                          ( ("coordinateI" variable
+                               (:constant-flag t
+                                :type ("std::int16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [64315 64346])
+                            ("coordinateQ" variable
+                               (:constant-flag t
+                                :type ("std::int16_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [64347 64378]))                          
+                        :type ("std::uint16_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [64282 64631]))                  
+                :type "namespace")
+                nil [64074 64634]))          
+      :file "Adas1020.cpp"
+      :pointmax 64659
+      :fsize 64658
+      :lastmodtime '(22609 1145 693529 343000)
+      :unmatched-syntax '((semantic-list 49248 . 49286) (semantic-list 49221 . 49248) (semantic-list 32262 . 32289) (semantic-list 32251 . 32262) (semantic-list 17365 . 17403) (semantic-list 17358 . 17365) (semantic-list 17280 . 17318) (semantic-list 17267 . 17280) (semantic-list 6062 . 6100) (semantic-list 6038 . 6062) (semantic-list 4271 . 4309) (semantic-list 4260 . 4271)))
+    (semanticdb-table "semanticdb-table"
+      :file "Adas1020.hpp"
+      :fsize 8705
+      :lastmodtime '(22609 1145 693529 343000))
+    (semanticdb-table "semanticdb-table"
+      :file "Adas1020ConfigurationOptions.hpp"
+      :fsize 5711
+      :lastmodtime '(22578 46564 550781 996000))
+    (semanticdb-table "semanticdb-table"
+      :file "Adas1020RegisterAddresses.hpp"
+      :fsize 13104
+      :lastmodtime '(22578 46564 550781 996000)))
+  :file "!home!snavarro!repo!wearable-sensor-ecg!src!drivers!afe-adas1020!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

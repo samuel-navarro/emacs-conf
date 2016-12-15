@@ -1,0 +1,55 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-mode
+      :tags 
+        '( ("EXTRA_DIST" variable (:default-value ("LICENSE")) nil [64 85])
+            ("SUBDIRS" variable (:default-value ("$(subdirs)")) nil [196 217])
+            ("DISTCLEANFILES" variable (:default-value ("scripts/gmock-config")) nil [293 331])
+            ("AM_CPPFLAGS" variable (:default-value ("$(GTEST_CPPFLAGS)" "-I$(srcdir)/include")) nil [427 479])
+            ("lib_LTLIBRARIES" variable (:default-value ("lib/libgmock.la")) nil [680 735])
+            ("lib_libgmock_la_SOURCES" variable (:default-value ("src/gmock-all.cc")) nil [736 779])
+            ("pkginclude_HEADERS" variable (:default-value ("include/gmock/gmock-actions.h" "include/gmock/gmock-cardinalities.h" "include/gmock/gmock-generated-actions.h" "include/gmock/gmock-generated-function-mockers.h" "include/gmock/gmock-generated-matchers.h" "include/gmock/gmock-generated-nice-strict.h" "include/gmock/gmock-matchers.h" "include/gmock/gmock-more-actions.h" "include/gmock/gmock-more-matchers.h" "include/gmock/gmock-spec-builders.h" "include/gmock/gmock.h")) nil [780 1245])
+            ("pkginclude_internaldir" variable (:default-value ("$(pkgincludedir)/internal")) nil [1246 1297])
+            ("pkginclude_internal_HEADERS" variable (:default-value ("include/gmock/internal/gmock-generated-internal-utils.h" "include/gmock/internal/gmock-internal-utils.h" "include/gmock/internal/gmock-port.h")) nil [1297 1477])
+            ("lib_libgmock_main_la_SOURCES" variable (:default-value ("src/gmock_main.cc")) nil [1478 1527])
+            ("lib_libgmock_main_la_LIBADD" variable (:default-value ("lib/libgmock.la")) nil [1527 1573])
+            ("TESTS" variable nil nil [1833 1840])
+            ("check_PROGRAMS" variable nil nil [1840 1856])
+            ("AM_LDFLAGS" variable (:default-value ("$(GTEST_LDFLAGS)")) nil [1856 1886])
+            ("TESTS" variable (:default-value ("test/gmock-spec-builders_test")) nil [1982 2021])
+            ("check_PROGRAMS" variable (:default-value ("test/gmock-spec-builders_test")) nil [2021 2069])
+            ("test_gmock_spec_builders_test_SOURCES" variable (:default-value ("test/gmock-spec-builders_test.cc")) nil [2069 2142])
+            ("test_gmock_spec_builders_test_LDADD" variable (:default-value ("$(GTEST_LIBS)" "lib/libgmock.la")) nil [2142 2210])
+            ("TESTS" variable (:default-value ("test/gmock_link_test")) nil [2331 2361])
+            ("check_PROGRAMS" variable (:default-value ("test/gmock_link_test")) nil [2361 2400])
+            ("test_gmock_link_test_SOURCES" variable (:default-value ("test/gmock_link2_test.cc" "test/gmock_link_test.cc" "test/gmock_link_test.h")) nil [2400 2515])
+            ("test_gmock_link_test_LDADD" variable (:default-value ("$(GTEST_LIBS)" "lib/libgmock_main.la" "lib/libgmock.la")) nil [2515 2596])
+            ("GMOCK_SOURCE_INGLUDES" variable (:default-value ("src/gmock-cardinalities.cc" "src/gmock-internal-utils.cc" "src/gmock-matchers.cc" "src/gmock-spec-builders.cc" "src/gmock.cc")) nil [3047 3208])
+            ("EXTRA_DIST" variable (:default-value ("$(GMOCK_SOURCE_INGLUDES)")) nil [3209 3248])
+            ("EXTRA_DIST" variable (:default-value ("test/gmock-actions_test.cc" "test/gmock_all_test.cc" "test/gmock-cardinalities_test.cc" "test/gmock_ex_test.cc" "test/gmock-generated-actions_test.cc" "test/gmock-generated-function-mockers_test.cc" "test/gmock-generated-internal-utils_test.cc" "test/gmock-generated-matchers_test.cc" "test/gmock-internal-utils_test.cc" "test/gmock-matchers_test.cc" "test/gmock-more-actions_test.cc" "test/gmock-nice-strict_test.cc" "test/gmock-port_test.cc" "test/gmock_stress_test.cc")) nil [3300 3815])
+            ("EXTRA_DIST" variable (:default-value ("test/gmock_leak_test.py" "test/gmock_leak_test_.cc" "test/gmock_output_test.py" "test/gmock_output_test_.cc" "test/gmock_output_test_golden.txt" "test/gmock_test_utils.py")) nil [3868 4067])
+            ("EXTRA_DIST" variable (:default-value ("CHANGES" "CONTRIBUTORS" "make/Makefile")) nil [4114 4175])
+            ("EXTRA_DIST" variable (:default-value ("include/gmock/gmock-generated-actions.h.pump" "include/gmock/gmock-generated-function-mockers.h.pump" "include/gmock/gmock-generated-matchers.h.pump" "include/gmock/gmock-generated-nice-strict.h.pump" "include/gmock/internal/gmock-generated-internal-utils.h.pump")) nil [4303 4592])
+            ("EXTRA_DIST" variable (:default-value ("scripts/fuse_gmock_files.py")) nil [4655 4697])
+            ("EXTRA_DIST" variable (:default-value ("scripts/generator/LICENSE" "scripts/generator/README" "scripts/generator/README.cppclean" "scripts/generator/cpp/__init__.py" "scripts/generator/cpp/ast.py" "scripts/generator/cpp/gmock_class.py" "scripts/generator/cpp/keywords.py" "scripts/generator/cpp/tokenize.py" "scripts/generator/cpp/utils.py" "scripts/generator/gmock_gen.py")) nil [4758 5127])
+            ("EXTRA_DIST" variable (:default-value ("CMakeLists.txt")) nil [5145 5178])
+            ("EXTRA_DIST" variable (:default-value ("msvc/2005/gmock.sln" "msvc/2005/gmock.vcproj" "msvc/2005/gmock_config.vsprops" "msvc/2005/gmock_main.vcproj" "msvc/2005/gmock_test.vcproj")) nil [5220 5384])
+            ("EXTRA_DIST" variable (:default-value ("msvc/2010/gmock.sln" "msvc/2010/gmock.vcxproj" "msvc/2010/gmock_config.props" "msvc/2010/gmock_main.vcxproj" "msvc/2010/gmock_test.vcxproj")) nil [5426 5591])
+            ("$(test_gmock_fused_test_SOURCES)" function (:arguments ("fused-gmock-internal")) nil [5897 5952])
+            ("fused-gmock-internal" function (:arguments ("$(pkginclude_HEADERS)" "$(pkginclude_internal_HEADERS)" "$(lib_libgmock_la_SOURCES)" "$(GMOCK_SOURCE_INGLUDES)" "$(lib_libgmock_main_la_SOURCES)" "scripts/fuse_gmock_files.py")) nil [6026 6609])
+            ("maintainer-clean-local" function nil nil [6610 6664])
+            ("CLEANFILES" variable (:default-value ("core")) nil [6797 6815])
+            ("install-exec-local" function nil nil [6971 7130])
+            ("install-data-local" function nil nil [7131 7290]))          
+      :file "Makefile.am"
+      :pointmax 7290
+      :fsize 7289
+      :lastmodtime '(21049 34152 0 0)
+      :unmatched-syntax '((shell-command 7284 . 7289) (bol 7283 . 7283) (string 2959 . 2980) (symbol 2957 . 2959) (punctuation 2955 . 2956) (symbol 2924 . 2954) (bol 2922 . 2922) (symbol 2903 . 2921) (symbol 2873 . 2896) (symbol 2843 . 2866) (symbol 2813 . 2836) (symbol 2778 . 2806) (punctuation 2770 . 2771) (symbol 2740 . 2769) (bol 2738 . 2738) (symbol 2716 . 2737) (punctuation 2714 . 2715) (punctuation 2713 . 2714) (symbol 2698 . 2712) (bol 2696 . 2696) (symbol 2674 . 2695) (punctuation 2672 . 2673) (punctuation 2671 . 2672) (symbol 2665 . 2670) (bol 2663 . 2663) (bol 2612 . 2612) (punctuation 642 . 643) (symbol 630 . 642) (punctuation 629 . 630) (punctuation 627 . 628) (symbol 619 . 626) (bol 617 . 617) (symbol 615 . 616) (punctuation 614 . 615) (symbol 595 . 614) (punctuation 593 . 594) (symbol 579 . 593) (punctuation 578 . 579) (punctuation 576 . 577) (symbol 564 . 575) (bol 562 . 562))))
+  :file "!home!snavarro!repo!wearable-sensor-nibp!build!test-gcc!gmock-prefix!src!gmock!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

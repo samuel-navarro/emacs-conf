@@ -31,38 +31,6 @@
 ;; Show matching parenthesis. How can you live without it.
 (show-paren-mode t)
 
-
-;; ---------------------------------------------------------------------------
-;; Behaviour
-;; --------------------------------------------------------------------------
-;; don't make pesky backup files
-(setq make-backup-files nil)
-;; don't use version numbers for backup files
-(setq version-control 'never)
-;; Open unidentified files in text mode
-(setq default-major-mode 'text-mode)
-;; Do only one line scrolling.
-(setq scroll-step 1)
-;; Don't wrap long lines.
-(set-default 'truncate-lines t)
-;; Make the region visible (but only up to the next operation on it)
-(setq transient-mark-mode t)
-;; Colours ("Colors" in some other languages)
-;; Give me colours in major editing modes!!!!!
-(require 'font-lock)
-(global-font-lock-mode t)
-;; Don't add new lines to the end of a file when using down-arrow key
-(setq next-line-add-newlines nil)
-;; Dont show the GNU splash screen
-					;(setq inhibit-startup-message t)
-;; Make all "yes or no" prompts show "y or n" instead
-(fset 'yes-or-no-p 'y-or-n-p)
-
-;; Make M-q equivalent to yank
-;;(require 'bind-key)
-;;(bind-key* "M-q" 'yank)
-
-
 ;; ---------------------------------------------------------------------------
 ;; Package install from MELPA
 ;;----------------------------------------------------------------------------
@@ -98,6 +66,9 @@
 ;;----------------------------------------------------------------------------
 (load-file "~/.emacs.d/cmake-mode.el")
 (require 'cmake-mode)
+
+(require 'log-edit)
+(require 'vc-git)
 
 (setq auto-mode-alist
       '(("\\.[Cc][Oo][Mm]\\'" . text-mode)
@@ -224,7 +195,39 @@
 	("\\.clo$" . LaTeX-mode)
 	("\\.pdf$" . doc-view-mode)))
 
+
 (autoload 'cmake-mode "~/.emacs.d/cmake-mode.el" t)
+
+;; ---------------------------------------------------------------------------
+;; Behaviour
+;; --------------------------------------------------------------------------
+;; don't make pesky backup files
+(setq make-backup-files nil)
+;; don't use version numbers for backup files
+(setq version-control 'never)
+;; Open unidentified files in text mode
+(setq default-major-mode 'text-mode)
+;; Do only one line scrolling.
+(setq scroll-step 1)
+;; Don't wrap long lines.
+(set-default 'truncate-lines t)
+;; Make the region visible (but only up to the next operation on it)
+(setq transient-mark-mode t)
+;; Colours ("Colors" in some other languages)
+;; Give me colours in major editing modes!!!!!
+(require 'font-lock)
+(global-font-lock-mode t)
+;; Don't add new lines to the end of a file when using down-arrow key
+(setq next-line-add-newlines nil)
+;; Dont show the GNU splash screen
+                    ;(setq inhibit-startup-message t)
+;; Make all "yes or no" prompts show "y or n" instead
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;; Make M-q equivalent to yank
+(require 'bind-key)
+(bind-key* "M-q" 'yank)
+
 
 ;; ---------------------------------------------------------------------------
 ;; Modeline
@@ -378,3 +381,67 @@
 ;; SCALE FONT
 ;; ---------------------------------------------------------------------------
 (set-face-attribute 'default (selected-frame) :height 135)
+
+
+;; ---------------------------------------------------------------------------
+;; EMACS AS C++ IDE
+;; ---------------------------------------------------------------------------
+(when (not package-archive-contents)
+    (package-refresh-contents))
+
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+
+(require 'use-package)
+(setq use-package-always-ensure t)
+
+(add-to-list 'load-path "~/.emacs.d/custom")
+
+(require 'setup-general)
+(if (version< emacs-version "24.4")
+    (require 'setup-ivy-counsel)
+  (require 'setup-helm)
+  (require 'setup-helm-gtags))
+;; (require 'setup-ggtags)
+(require 'setup-cedet)
+(require 'setup-editing)
+
+;; function-args
+;; (require 'function-args)
+;; (fa-config-default)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (d-mode json-mode helm-bind-key neotree sr-speedbar ggtags rtags cmake-ide))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(require 'ggtags)
+(add-hook 'c-mode-common-hook
+          (lambda ()
+            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
+              (ggtags-mode 1))))
+
+(define-key ggtags-mode-map (kbd "C-c g s") 'ggtags-find-other-symbol)
+(define-key ggtags-mode-map (kbd "C-c g h") 'ggtags-view-tag-history)
+(define-key ggtags-mode-map (kbd "C-c g r") 'ggtags-find-reference)
+(define-key ggtags-mode-map (kbd "C-c g f") 'ggtags-find-file)
+(define-key ggtags-mode-map (kbd "C-c g c") 'ggtags-create-tags)
+(define-key ggtags-mode-map (kbd "C-c g u") 'ggtags-update-tags)
+
+(define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
+
+;; Company mode completion (with clang)
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+(setq company-backends (delete 'company-semantic company-backends))
+(define-key c-mode-map  (kbd "M-/") 'company-complete)
+(define-key c++-mode-map  (kbd "M-/") 'company-complete)

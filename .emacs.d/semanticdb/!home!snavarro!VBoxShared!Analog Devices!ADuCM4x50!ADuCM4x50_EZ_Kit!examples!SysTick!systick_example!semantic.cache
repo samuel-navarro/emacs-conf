@@ -1,0 +1,36 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("systick_example.h" include nil nil [2587 2615])
+            ("gCounts" variable
+               (:typemodifiers ("volatile" "static")
+                :default-value "0u"
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [2617 2655])
+            ("SysTick_Handler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2678 2683]))                  
+                :type "void")
+                nil [2657 2700])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2711 2716]))                  
+                :type "int")
+                nil [2702 3085]))          
+      :file "systick_example.c"
+      :pointmax 3086
+      :fsize 3159
+      :lastmodtime '(22544 42916 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "systick_example.h"
+      :fsize 2885
+      :lastmodtime '(22544 42916 0 0)))
+  :file "!home!snavarro!VBoxShared!Analog Devices!ADuCM4x50!ADuCM4x50_EZ_Kit!examples!SysTick!systick_example!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

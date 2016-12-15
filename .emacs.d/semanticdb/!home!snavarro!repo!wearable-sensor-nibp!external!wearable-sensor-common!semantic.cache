@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("A" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [11 18])
+                    ("MockSpiAutoChipSelectInterface" function (:type "int") (reparse-symbol classsubparts) [23 211])
+                    ("private" label nil (reparse-symbol classsubparts) [213 221])
+                    ("failTest" function (:type "bool") (reparse-symbol classsubparts) [226 314]))                  
+                :type "class")
+                nil [1 317]))          
+      :file "*scratch*"
+      :pointmax 318
+      :fsize 317
+      :lastmodtime '(22609 14677 20442 611000)
+      :unmatched-syntax nil))
+  :file "!home!snavarro!repo!wearable-sensor-nibp!external!wearable-sensor-common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

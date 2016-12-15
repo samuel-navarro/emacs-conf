@@ -1,0 +1,30 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("__ADI_PROCESSOR_H__" variable (:constant-flag t) nil [2617 2636])
+            ("__ADUCM4050__" variable (:constant-flag t) nil [2738 2751])
+            ("__ADUCM4x50__" variable (:constant-flag t) nil [2827 2840])
+            ("ADuCM4050.h" include (:system-flag t) nil [2942 2964]))          
+      :file "adi_processor.h"
+      :pointmax 3006
+      :fsize 3072
+      :lastmodtime '(22583 60609 754846 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__ADUCM4050__")
+          ("__ADI_PROCESSOR_H__")
+          ("__ADUCM4x50__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "ADuCM4050.h"
+      :fsize 721
+      :lastmodtime '(22583 60609 753846 0)))
+  :file "!home!snavarro!repo!wearable-sensor-nibp!external!wearable-sensor-common!hw!external!adi-sdk-aducm4x50!inc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

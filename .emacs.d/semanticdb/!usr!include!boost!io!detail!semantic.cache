@@ -1,0 +1,463 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_IO_QUOTED_MANIP" variable (:constant-flag t) nil [417 438])
+            ("iosfwd" include (:system-flag t) nil [440 457])
+            ("ios" include (:system-flag t) nil [458 472])
+            ("string" include (:system-flag t) nil [473 490])
+            ("iterator" include (:system-flag t) nil [491 510])
+            ("boost/io/ios_state.hpp" include (:system-flag t) nil [511 544])
+            ("boost" type
+               (:members 
+                  ( ("io" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("quoted_proxy" type
+                                       (:template 
+                                          ( ("String" type (:type "class") nil nil)
+                                            ("Char" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [606 662]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [587 664])
+                            ("quoted" function
+                               (:template 
+                                  ( ("Char" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil)
+                                    ("Alloc" type (:type "class") nil nil))                                  
+                                :type ("detail::quoted_proxy" type
+                                     (:template-specifier 
+                                        ( ("std::basic_string" type
+                                             (:reference 1
+                                              :constant-flag t
+                                              :template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil)
+                                                  ("Alloc" type nil nil nil))                                                )
+                                              nil nil)
+                                          ("Char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil)
+                                                  ("Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [956 1004])
+                                    ("escape" variable
+                                       (:default-value "'\\\\'"
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1020 1036])
+                                    ("delim" variable
+                                       (:default-value "'\\\"'"
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1038 1053]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol namespacesubparts) [811 1055])
+                            ("quoted" function
+                               (:template 
+                                  ( ("Char" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil)
+                                    ("Alloc" type (:type "class") nil nil))                                  
+                                :type ("detail::quoted_proxy" type
+                                     (:template-specifier 
+                                        ( ("std::basic_string" type
+                                             (:reference 1
+                                              :template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil)
+                                                  ("Alloc" type nil nil nil))                                                )
+                                              nil nil)
+                                          ("Char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :type ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil)
+                                                  ("Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1253 1295])
+                                    ("escape" variable
+                                       (:default-value "'\\\\'"
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1311 1327])
+                                    ("delim" variable
+                                       (:default-value "'\\\"'"
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1329 1344]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol namespacesubparts) [1114 1346])
+                            ("quoted" function
+                               (:template 
+                                  ( ("Char" type (:type "class") nil nil))                                  
+                                :type ("detail::quoted_proxy" type
+                                     (:template-specifier 
+                                        ( ("Char" type
+                                             (:pointer 1
+                                              :constant-flag t)
+                                              nil nil)
+                                          ("Char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1475 1489])
+                                    ("escape" variable
+                                       (:default-value "'\\\\'"
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1490 1506])
+                                    ("delim" variable
+                                       (:default-value "'\\\"'"
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1508 1523]))                                  
+                                :prototype-flag t)
+                                (reparse-symbol namespacesubparts) [1392 1525])
+                            ("detail" type
+                               (:members 
+                                  ( ("quoted_proxy" type
+                                       (:template 
+                                          ( ("String" type (:type "class") nil nil)
+                                            ("Char" type (:type "class") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("string" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1772 1787])
+                                            ("escape" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1796 1811])
+                                            ("delim" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1820 1834])
+                                            ("quoted_proxy" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("s_" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1857 1867])
+                                                    ("escape_" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1868 1881])
+                                                    ("delim_" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1882 1894]))                                                  
+                                                :type ("quoted_proxy" type (:type "struct") nil nil))
+                                                (reparse-symbol classsubparts) [1844 1952])
+                                            ("private" label nil (reparse-symbol classsubparts) [1959 1967])
+                                            ("=" function
+                                               (:prototype-flag t
+                                                :operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("quoted_proxy" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2074 2094]))                                                  
+                                                :type ("quoted_proxy" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2050 2095]))                                          )
+                                        (reparse-symbol namespacesubparts) [1694 2118])
+                                    ("basic_string_inserter_imp" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil)
+                                            ("Alloc" type (:type "class") nil nil))                                          
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("os" variable
+                                               (:reference 1
+                                                :type ("std::basic_ostream" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type nil nil nil)
+                                                          ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2336 2373])
+                                            ("string" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("std::basic_string" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type nil nil nil)
+                                                          ("Traits" type nil nil nil)
+                                                          ("Alloc" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2382 2436])
+                                            ("escape" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2437 2449])
+                                            ("delim" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2450 2461]))                                          )
+                                        (reparse-symbol namespacesubparts) [2215 2904])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil)
+                                            ("Alloc" type (:type "class") nil nil))                                          
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("os" variable
+                                               (:reference 1
+                                                :type ("std::basic_ostream" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type nil nil nil)
+                                                          ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3081 3118])
+                                            ("proxy" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("quoted_proxy" type
+                                                     (:template-specifier 
+                                                        ( ("std::basic_string" type
+                                                             (:reference 1
+                                                              :constant-flag t
+                                                              :template-specifier 
+                                                                ( ("Char" type nil nil nil)
+                                                                  ("Traits" type nil nil nil)
+                                                                  ("Alloc" type nil nil nil))                                                                )
+                                                              nil nil)
+                                                          ("Char" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3128 3208]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [2968 3311])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil)
+                                            ("Alloc" type (:type "class") nil nil))                                          
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("os" variable
+                                               (:reference 1
+                                                :type ("std::basic_ostream" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type nil nil nil)
+                                                          ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3492 3529])
+                                            ("proxy" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("quoted_proxy" type
+                                                     (:template-specifier 
+                                                        ( ("std::basic_string" type
+                                                             (:reference 1
+                                                              :template-specifier 
+                                                                ( ("Char" type nil nil nil)
+                                                                  ("Traits" type nil nil nil)
+                                                                  ("Alloc" type nil nil nil))                                                                )
+                                                              nil nil)
+                                                          ("Char" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3539 3612]))                                          
+                                        :typemodifiers ("inline")
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [3379 3715])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil))                                          
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("os" variable
+                                               (:reference 1
+                                                :type ("std::basic_ostream" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type nil nil nil)
+                                                          ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3858 3895])
+                                            ("proxy" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("quoted_proxy" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type
+                                                             (:pointer 1
+                                                              :constant-flag t)
+                                                              nil nil)
+                                                          ("Char" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [3905 3950]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [3771 4245])
+                                    (">>" function
+                                       (:template 
+                                          ( ("Char" type (:type "class") nil nil)
+                                            ("Traits" type (:type "class") nil nil)
+                                            ("Alloc" type (:type "class") nil nil))                                          
+                                        :type ("std::basic_istream" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("is" variable
+                                               (:reference 1
+                                                :type ("std::basic_istream" type
+                                                     (:template-specifier 
+                                                        ( ("Char" type nil nil nil)
+                                                          ("Traits" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4414 4451])
+                                            ("proxy" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("quoted_proxy" type
+                                                     (:template-specifier 
+                                                        ( ("std::basic_string" type
+                                                             (:reference 1
+                                                              :template-specifier 
+                                                                ( ("Char" type nil nil nil)
+                                                                  ("Traits" type nil nil nil)
+                                                                  ("Alloc" type nil nil nil))                                                                )
+                                                              nil nil)
+                                                          ("Char" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4461 4534]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol namespacesubparts) [4314 5277]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1623 5284])
+                            ("quoted" function
+                               (:template 
+                                  ( ("Char" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil)
+                                    ("Alloc" type (:type "class") nil nil))                                  
+                                :type ("detail::quoted_proxy" type
+                                     (:template-specifier 
+                                        ( ("std::basic_string" type
+                                             (:reference 1
+                                              :constant-flag t
+                                              :template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil)
+                                                  ("Alloc" type nil nil nil))                                                )
+                                              nil nil)
+                                          ("Char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil)
+                                                  ("Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5521 5569])
+                                    ("escape" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5570 5582])
+                                    ("delim" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5583 5594]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [5375 5722])
+                            ("quoted" function
+                               (:template 
+                                  ( ("Char" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil)
+                                    ("Alloc" type (:type "class") nil nil))                                  
+                                :type ("detail::quoted_proxy" type
+                                     (:template-specifier 
+                                        ( ("std::basic_string" type
+                                             (:reference 1
+                                              :template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil)
+                                                  ("Alloc" type nil nil nil))                                                )
+                                              nil nil)
+                                          ("Char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :type ("std::basic_string" type
+                                             (:template-specifier 
+                                                ( ("Char" type nil nil nil)
+                                                  ("Traits" type nil nil nil)
+                                                  ("Alloc" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5936 5978])
+                                    ("escape" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5979 5991])
+                                    ("delim" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5992 6003]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [5796 6124])
+                            ("quoted" function
+                               (:template 
+                                  ( ("Char" type (:type "class") nil nil))                                  
+                                :type ("detail::quoted_proxy" type
+                                     (:template-specifier 
+                                        ( ("Char" type
+                                             (:pointer 1
+                                              :constant-flag t)
+                                              nil nil)
+                                          ("Char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("s" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("Char" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6269 6283])
+                                    ("escape" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6284 6296])
+                                    ("delim" variable (:type ("Char" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6297 6308]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [6185 6393]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [566 6398]))                  
+                :type "namespace")
+                nil [546 6417]))          
+      :file "quoted_manip.hpp"
+      :pointmax 6471
+      :fsize 6470
+      :lastmodtime '(22431 53996 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_IO_QUOTED_MANIP")
+          )
+))
+  :file "!usr!include!boost!io!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

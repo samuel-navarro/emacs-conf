@@ -1,0 +1,36 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_UTILITY_ENABLE_IF_HPP" variable (:constant-flag t) nil [249 276])
+            ("boost/core/enable_if.hpp" include (:system-flag t) nil [367 402]))          
+      :file "enable_if.hpp"
+      :pointmax 411
+      :fsize 410
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_UTILITY_ENABLE_IF_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_UTILITY_ADDRESSOF_HPP" variable (:constant-flag t) nil [249 276])
+            ("boost/core/addressof.hpp" include (:system-flag t) nil [367 402]))          
+      :file "addressof.hpp"
+      :pointmax 411
+      :fsize 410
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_UTILITY_ADDRESSOF_HPP")
+          )
+))
+  :file "!usr!include!boost!utility!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

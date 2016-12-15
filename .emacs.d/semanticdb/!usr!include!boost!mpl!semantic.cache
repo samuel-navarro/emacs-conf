@@ -1,0 +1,1318 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_EVAL_IF_HPP_INCLUDED" variable (:constant-flag t) nil [49 79])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [373 400])
+            ("boost/mpl/aux_/na_spec.hpp" include (:system-flag t) nil [401 438])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [439 483])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [484 525])
+            ("boost/mpl/aux_/config/gcc.hpp" include (:system-flag t) nil [526 566])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [567 614])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("eval_if" type
+                               (:superclasses 
+                                  ( ("if_::type" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [792 1172])
+                            ("eval_if_c" type
+                               (:template 
+                                  ( ("bool" type (:typevar "C") nil nil)
+                                    ("F1" type (:type "class") nil nil)
+                                    ("F2" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("if_c::type" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1278 1673]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [634 1755]))                  
+                :type "namespace")
+                nil [616 1755]))          
+      :file "eval_if.hpp"
+      :pointmax 1755
+      :fsize 1754
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 1696 . 1708) (symbol 1675 . 1696) (number 1697 . 1698) (semantic-list 1148 . 1169) (symbol 1120 . 1148) (semantic-list 1159 . 1168) (number 1149 . 1150) (punctuation 790 . 791) (semantic-list 781 . 785) (symbol 759 . 781) (TYPENAME 750 . 758) (punctuation 748 . 749) (semantic-list 739 . 743) (symbol 717 . 739) (TYPENAME 708 . 716) (punctuation 706 . 707) (semantic-list 698 . 701) (symbol 676 . 698) (TYPENAME 667 . 675) (punctuation 659 . 660) (TEMPLATE 651 . 659))
+      :lexical-table 
+        '(("BOOST_MPL_EVAL_IF_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_IF_HPP_INCLUDED" variable (:constant-flag t) nil [44 69])
+            ("boost/mpl/aux_/value_wknd.hpp" include (:system-flag t) nil [365 405])
+            ("boost/mpl/aux_/static_cast.hpp" include (:system-flag t) nil [406 447])
+            ("boost/mpl/aux_/na_spec.hpp" include (:system-flag t) nil [448 485])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [486 530])
+            ("boost/mpl/aux_/config/integral.hpp" include (:system-flag t) nil [531 576])
+            ("boost/mpl/aux_/config/ctps.hpp" include (:system-flag t) nil [577 618])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [619 666])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("if_c" type
+                               (:template 
+                                  ( ("bool" type (:typevar "C") nil nil)
+                                    ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("T1" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [842 858]))                                  )
+                                (reparse-symbol namespacesubparts) [759 861])
+                            ("if_c" type
+                               (:template 
+                                  ( ("T1" type (:type "class") nil nil)
+                                    ("T2" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("T2" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [946 962]))                                  
+                                :template-specifier 
+                                  ( ("false" type nil nil nil)
+                                    ("T1" type nil nil nil)
+                                    ("T2" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [863 965])
+                            ("if_" type
+                               (:members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [1296 1304])
+                                    ("almost_type_" variable (:type "int") (reparse-symbol classsubparts) [1620 1633])
+                                    ("public" label nil (reparse-symbol classsubparts) [1637 1644])
+                                    ("type" type
+                                       (:typedef ("almost_type_::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1649 1690]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [1282 1749]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [686 2874]))                  
+                :type "namespace")
+                nil [668 2875]))          
+      :file "if.hpp"
+      :pointmax 2913
+      :fsize 2912
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 2863 . 2871) (symbol 2842 . 2863) (number 2864 . 2865) (semantic-list 1728 . 1746) (symbol 1700 . 1728) (semantic-list 1735 . 1745) (number 1729 . 1730) (punctuation 1618 . 1619) (symbol 1607 . 1609) (punctuation 1605 . 1606) (symbol 1594 . 1596) (punctuation 1592 . 1593) (semantic-list 1533 . 1576) (symbol 1508 . 1533) (punctuation 1569 . 1570) (punctuation 1568 . 1569) (semantic-list 1564 . 1568) (punctuation 1394 . 1395) (symbol 1390 . 1394) (TYPEDEF 1382 . 1389) (punctuation 1280 . 1281) (semantic-list 1271 . 1275) (symbol 1249 . 1271) (TYPENAME 1240 . 1248) (punctuation 1238 . 1239) (semantic-list 1229 . 1233) (symbol 1207 . 1229) (TYPENAME 1198 . 1206) (punctuation 1196 . 1197) (semantic-list 1187 . 1191) (symbol 1165 . 1187) (TYPENAME 1156 . 1164) (punctuation 1148 . 1149) (TEMPLATE 1140 . 1148))
+      :lexical-table 
+        '(("BOOST_MPL_IF_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_OR_HPP_INCLUDED" variable (:constant-flag t) nil [44 69])
+            ("boost/mpl/aux_/config/use_preprocessed.hpp" include (:system-flag t) nil [365 418])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [521 553])
+            ("boost/mpl/aux_/nested_type_wknd.hpp" include (:system-flag t) nil [554 603])
+            ("boost/mpl/aux_/na_spec.hpp" include (:system-flag t) nil [604 644])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [645 692])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [693 737])
+            ("BOOST_MPL_PREPROCESSED_HEADER" variable (:constant-flag t) nil [1161 1190])
+            ("boost/mpl/aux_/include_preprocessed.hpp" include (:system-flag t) nil [1198 1251]))          
+      :file "or.hpp"
+      :pointmax 1624
+      :fsize 1623
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 489 . 519) (symbol 482 . 489) (punctuation 481 . 482) (punctuation 479 . 480) (punctuation 478 . 479))
+      :lexical-table 
+        '(("BOOST_MPL_OR_HPP_INCLUDED")
+          ("BOOST_MPL_PREPROCESSED_HEADER" . 
+              ((symbol "or" 1191 . 1193) (punctuation "." 1193 . 1194) (symbol "hpp" 1194 . 1197)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_AND_HPP_INCLUDED" variable (:constant-flag t) nil [45 71])
+            ("boost/mpl/aux_/config/use_preprocessed.hpp" include (:system-flag t) nil [367 420])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [523 555])
+            ("boost/mpl/aux_/nested_type_wknd.hpp" include (:system-flag t) nil [556 605])
+            ("boost/mpl/aux_/na_spec.hpp" include (:system-flag t) nil [606 646])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [647 694])
+            ("BOOST_MPL_PREPROCESSED_HEADER" variable (:constant-flag t) nil [1125 1154])
+            ("boost/mpl/aux_/include_preprocessed.hpp" include (:system-flag t) nil [1163 1216]))          
+      :file "and.hpp"
+      :pointmax 1594
+      :fsize 1593
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 491 . 521) (symbol 484 . 491) (punctuation 483 . 484) (punctuation 481 . 482) (punctuation 480 . 481))
+      :lexical-table 
+        '(("BOOST_MPL_AND_HPP_INCLUDED")
+          ("BOOST_MPL_PREPROCESSED_HEADER" . 
+              ((symbol "and" 1155 . 1158) (punctuation "." 1158 . 1159) (symbol "hpp" 1159 . 1162)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_NOT_HPP_INCLUDED" variable (:constant-flag t) nil [45 71])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [367 396])
+            ("boost/mpl/aux_/nttp_decl.hpp" include (:system-flag t) nil [397 436])
+            ("boost/mpl/aux_/nested_type_wknd.hpp" include (:system-flag t) nil [437 483])
+            ("boost/mpl/aux_/na_spec.hpp" include (:system-flag t) nil [484 521])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [522 566])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("aux" type (:type "namespace") (reparse-symbol namespacesubparts) [603 736]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [586 990]))                  
+                :type "namespace")
+                nil [568 991]))          
+      :file "not.hpp"
+      :pointmax 1030
+      :fsize 1029
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 979 . 987) (symbol 958 . 979) (number 980 . 981) (punctuation 955 . 956) (semantic-list 907 . 955) (punctuation 905 . 906) (symbol 891 . 896) (punctuation 890 . 891) (punctuation 889 . 890) (semantic-list 886 . 889) (symbol 856 . 886) (punctuation 844 . 845) (symbol 836 . 844) (punctuation 835 . 836) (punctuation 834 . 835) (symbol 831 . 834) (punctuation 829 . 830) (symbol 820 . 824) (STRUCT 813 . 819) (punctuation 811 . 812) (semantic-list 803 . 806) (symbol 781 . 803) (TYPENAME 772 . 780) (punctuation 764 . 765) (TEMPLATE 756 . 764) (punctuation 732 . 733) (semantic-list 729 . 732) (punctuation 727 . 728) (symbol 725 . 727) (punctuation 724 . 725) (punctuation 723 . 724) (symbol 718 . 723) (punctuation 716 . 717) (symbol 703 . 711) (STRUCT 696 . 702) (punctuation 664 . 665) (semantic-list 653 . 663) (symbol 630 . 653) (punctuation 628 . 629) (TEMPLATE 620 . 628))
+      :lexical-table 
+        '(("BOOST_MPL_NOT_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_ALWAYS_HPP_INCLUDED" variable (:constant-flag t) nil [48 77])
+            ("boost/mpl/aux_/preprocessor/default_params.hpp" include (:system-flag t) nil [373 430])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [431 463])
+            ("boost/mpl/aux_/arity_spec.hpp" include (:system-flag t) nil [464 504])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("always" type
+                               (:template 
+                                  ( ("Value" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("apply" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:typedef ("Value" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [727 746]))                                          
+                                        :type "struct")
+                                        (reparse-symbol classsubparts) [700 753]))                                  )
+                                (reparse-symbol namespacesubparts) [541 756]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [524 796]))                  
+                :type "namespace")
+                nil [506 797]))          
+      :file "always.hpp"
+      :pointmax 839
+      :fsize 838
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 782 . 793) (symbol 758 . 782) (number 783 . 784) (punctuation 694 . 695) (semantic-list 633 . 685) (symbol 606 . 633) (punctuation 596 . 597) (TEMPLATE 588 . 596))
+      :lexical-table 
+        '(("BOOST_MPL_ALWAYS_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_APPLY_HPP_INCLUDED" variable (:constant-flag t) nil [103 131])
+            ("boost/mpl/apply_fwd.hpp" include (:system-flag t) nil [470 507])
+            ("boost/mpl/apply_wrap.hpp" include (:system-flag t) nil [508 546])
+            ("boost/mpl/placeholders.hpp" include (:system-flag t) nil [547 587])
+            ("boost/mpl/lambda.hpp" include (:system-flag t) nil [588 622])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [623 658])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [659 706])
+            ("boost/mpl/aux_/config/use_preprocessed.hpp" include (:system-flag t) nil [715 768])
+            ("BOOST_MPL_PREPROCESSED_HEADER" variable (:constant-flag t) nil [882 911])
+            ("boost/mpl/aux_/include_preprocessed.hpp" include (:system-flag t) nil [922 975]))          
+      :file "apply.hpp"
+      :pointmax 6088
+      :fsize 6087
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 839 . 869) (symbol 832 . 839) (punctuation 831 . 832) (punctuation 829 . 830) (punctuation 828 . 829))
+      :lexical-table 
+        '(("BOOST_MPL_APPLY_HPP_INCLUDED")
+          ("BOOST_MPL_PREPROCESSED_HEADER" . 
+              ((symbol "apply" 912 . 917) (punctuation "." 917 . 918) (symbol "hpp" 918 . 921)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_IDENTITY_HPP_INCLUDED" variable (:constant-flag t) nil [50 81])
+            ("boost/mpl/aux_/na_spec.hpp" include (:system-flag t) nil [377 414])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [415 459])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("identity" type
+                               (:members 
+                                  ( ("type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [575 590]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [553 644])
+                            ("make_identity" type
+                               (:members 
+                                  ( ("type" type
+                                       (:typedef ("identity" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [730 755]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [703 814]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [479 907]))                  
+                :type "namespace")
+                nil [461 908]))          
+      :file "identity.hpp"
+      :pointmax 952
+      :fsize 951
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 886 . 904) (symbol 858 . 886) (number 887 . 888) (semantic-list 844 . 857) (symbol 816 . 844) (number 845 . 846) (semantic-list 788 . 811) (symbol 760 . 788) (semantic-list 807 . 810) (number 789 . 790) (punctuation 701 . 702) (semantic-list 693 . 696) (symbol 671 . 693) (TYPENAME 662 . 670) (punctuation 654 . 655) (TEMPLATE 646 . 654) (semantic-list 623 . 641) (symbol 595 . 623) (semantic-list 637 . 640) (number 624 . 625) (punctuation 551 . 552) (semantic-list 543 . 546) (symbol 521 . 543) (TYPENAME 512 . 520) (punctuation 504 . 505) (TEMPLATE 496 . 504))
+      :lexical-table 
+        '(("BOOST_MPL_IDENTITY_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_BOOL_HPP_INCLUDED" variable (:constant-flag t) nil [46 73])
+            ("boost/mpl/bool_fwd.hpp" include (:system-flag t) nil [369 402])
+            ("boost/mpl/integral_c_tag.hpp" include (:system-flag t) nil [403 442])
+            ("boost/mpl/aux_/config/static_constant.hpp" include (:system-flag t) nil [443 495])
+            ("bool_" type
+               (:template 
+                  ( ("bool" type (:typevar "C_") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("BOOST_STATIC_CONSTANT" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [600 605])
+                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [606 616]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [578 618])
+                    ("tag" type
+                       (:typedef ("integral_c_tag" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [623 650])
+                    ("type" type
+                       (:typedef ("bool_" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [655 674])
+                    ("value_type" type
+                       (:typedef ("bool")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [679 703]))                  )
+                nil [539 772])
+            ("bool_::value" variable (:type "bool") nil [827 875]))          
+      :file "bool.hpp"
+      :pointmax 965
+      :fsize 964
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((symbol 884 . 925) (semantic-list 746 . 769) (CONST 740 . 745) (semantic-list 737 . 739) (BOOL 733 . 737) (OPERATOR 724 . 732) (symbol 708 . 723) (symbol 497 . 537))
+      :lexical-table 
+        '(("BOOST_MPL_BOOL_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_PLACEHOLDERS_HPP_INCLUDED" variable (:constant-flag t) nil [110 145])
+            ("boost/mpl/arg.hpp" include (:system-flag t) nil [520 551])
+            ("boost/mpl/aux_/adl_barrier.hpp" include (:system-flag t) nil [552 596])
+            ("BOOST_MPL_AUX_ARG_ADL_BARRIER_DECL" variable (:constant-flag t) nil [669 703])
+            ("boost/mpl/aux_/config/use_preprocessed.hpp" include (:system-flag t) nil [875 928])
+            ("BOOST_MPL_PREPROCESSED_HEADER" variable (:constant-flag t) nil [1039 1068])
+            ("boost/mpl/aux_/include_preprocessed.hpp" include (:system-flag t) nil [1086 1139]))          
+      :file "placeholders.hpp"
+      :pointmax 2451
+      :fsize 2450
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 996 . 1026) (symbol 989 . 996) (punctuation 988 . 989) (punctuation 986 . 987) (punctuation 985 . 986))
+      :lexical-table 
+        '(("BOOST_MPL_AUX_ARG_ADL_BARRIER_DECL" (spp-arg-list ("type") 703 . 709) . 
+              ((USING "using" 720 . 725) (punctuation ":" 726 . 727) (punctuation ":" 727 . 728) (symbol "BOOST_MPL_AUX_ADL_BARRIER_NAMESPACE" 728 . 763) (punctuation ":" 763 . 764) (punctuation ":" 764 . 765) (symbol "type" 765 . 769) (punctuation ";" 769 . 770)))
+          ("BOOST_MPL_PLACEHOLDERS_HPP_INCLUDED")
+          ("BOOST_MPL_PREPROCESSED_HEADER" . 
+              ((symbol "placeholders" 1069 . 1081) (punctuation "." 1081 . 1082) (symbol "hpp" 1082 . 1085)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_ASSERT_HPP_INCLUDED" variable (:constant-flag t) nil [48 77])
+            ("boost/mpl/not.hpp" include (:system-flag t) nil [373 401])
+            ("boost/mpl/aux_/value_wknd.hpp" include (:system-flag t) nil [402 442])
+            ("boost/mpl/aux_/nested_type_wknd.hpp" include (:system-flag t) nil [443 489])
+            ("boost/mpl/aux_/yes_no.hpp" include (:system-flag t) nil [490 526])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [527 559])
+            ("boost/mpl/aux_/adl_barrier.hpp" include (:system-flag t) nil [560 601])
+            ("boost/mpl/aux_/config/nttp.hpp" include (:system-flag t) nil [603 644])
+            ("boost/mpl/aux_/config/dtp.hpp" include (:system-flag t) nil [645 685])
+            ("boost/mpl/aux_/config/gcc.hpp" include (:system-flag t) nil [686 726])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [727 768])
+            ("boost/mpl/aux_/config/gpu.hpp" include (:system-flag t) nil [769 809])
+            ("boost/mpl/aux_/config/static_constant.hpp" include (:system-flag t) nil [810 862])
+            ("boost/mpl/aux_/config/pp_counter.hpp" include (:system-flag t) nil [863 910])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [911 958])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [960 997])
+            ("boost/config.hpp" include (:system-flag t) nil [999 1026])
+            ("cstddef" include (:system-flag t) nil [1070 1088])
+            ("BOOST_MPL_AUX_ASSERT_CONSTANT" variable (:constant-flag t) nil [2055 2084])
+            ("failed" type (:type "struct") nil [2176 2193])
+            ("AUX778076_ASSERT_ARG" variable (:constant-flag t) nil [2488 2508])
+            ("assert" type
+               (:template 
+                  ( ("bool" type (:typevar "C") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("type" type
+                       (:typedef ("void")
+                        :pointer 1
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2565 2584]))                  )
+                nil [2522 2587])
+            ("assert" type
+               (:type "struct"
+                :members 
+                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [2668 2673]))                  
+                :template-specifier 
+                  ( ("false" type nil nil nil))                  )
+                nil [2588 2676])
+            ("assertion_failed" function
+               (:template 
+                  ( ("bool" type (:typevar "C") nil nil))                  
+                :type "int"
+                :arguments 
+                  ( ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("assert" type
+                             (:template-specifier 
+                                ( ("C" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2719 2738])
+                    ("" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2739 2745]))                  
+                :prototype-flag t)
+                nil [2678 2746])
+            ("assertion" type
+               (:template 
+                  ( ("bool" type (:typevar "C") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("failed" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable (:type ("assert" type
+                                 (:template-specifier 
+                                    ( ("false" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [2809 2824]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2790 2825]))                  )
+                nil [2748 2828])
+            ("assertion" type
+               (:type "struct"
+                :members 
+                  ( ("failed" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [2889 2896]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2870 2897]))                  
+                :template-specifier 
+                  ( ("true" type nil nil nil))                  )
+                nil [2830 2900])
+            ("assert_" type
+               (:members 
+                  ( ("types" type
+                       (:template 
+                          ( ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil)
+                            ("T3" type (:type "class") nil nil)
+                            ("T4" type (:type "class") nil nil))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2993 3087])
+                    ("arg" variable
+                       (:typemodifiers ("static")
+                        :type ("assert_" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3099 3124])
+                    ("relations" type
+                       (:members 
+                          ( ("equal" variable
+                               (:constant-flag t
+                                :default-value (3154 3155)
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3146 3155])
+                            ("not_equal" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3157 3167])
+                            ("greater" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3168 3176])
+                            ("greater_equal" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3177 3191])
+                            ("less" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3192 3197])
+                            ("less_equal" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [3198 3210]))                          
+                        :type "enum")
+                        (reparse-symbol classsubparts) [3129 3211]))                  
+                :type "struct")
+                nil [2902 3214])
+            ("==" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3289 3296])
+                    ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3297 3305]))                  
+                :type "bool")
+                nil [3272 3306])
+            ("!=" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3324 3331])
+                    ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3332 3340]))                  
+                :type "bool")
+                nil [3307 3341])
+            (">" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3358 3365])
+                    ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3366 3374]))                  
+                :type "bool")
+                nil [3342 3375])
+            (">=" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3393 3400])
+                    ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3401 3409]))                  
+                :type "bool")
+                nil [3376 3410])
+            ("<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3427 3434])
+                    ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3435 3443]))                  
+                :type "bool")
+                nil [3411 3444])
+            ("<=" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3462 3469])
+                    ("" variable (:type ("failed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3470 3478]))                  
+                :type "bool")
+                nil [3445 3479])
+            ("assert_relation" type (:type "struct") nil [3775 3801])
+            ("BOOST_MPL_AUX_ASSERT_RELATION" variable (:constant-flag t) nil [3813 3842])
+            ("assert_arg_pred_impl" type
+               (:template 
+                  ( ("bool" type nil nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("type" type
+                       (:typedef ("int")
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5416 5433]))                  )
+                nil [5369 5436])
+            ("assert_arg_pred_impl" type
+               (:type "struct"
+                :members 
+                  ( ("type" type
+                       (:typedef ("void")
+                        :pointer 1
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5484 5503]))                  
+                :template-specifier 
+                  ( ("true" type nil nil nil))                  )
+                nil [5437 5506])
+            ("assert_arg_pred" type
+               (:template 
+                  ( ("P" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("p_type" type
+                       (:typedef ("P::type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5560 5592])
+                    ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5653 5663]))                  )
+                nil [5508 5666])
+            ("assert_arg_pred_not" type
+               (:template 
+                  ( ("P" type (:type "class") nil nil))                  
+                :type "struct"
+                :members 
+                  ( ("p_type" type
+                       (:typedef ("P::type" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [5724 5756])
+                    ("BOOST_STATIC_CONSTANT" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) nil)
+                            ("" variable (:type ("p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [5761 5819])
+                    ("type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5866 5876]))                  )
+                nil [5668 5879])
+            ("assert_arg" function
+               (:template 
+                  ( ("Pred" type (:type "class") nil nil))                  
+                :type ("assert" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("Pred" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6286 6291]))                          
+                        :type "void")
+                        nil nil)
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("assert_arg_pred_not" type
+                             (:template-specifier 
+                                ( ("Pred" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6293 6328])
+                    ("" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6329 6335]))                  
+                :prototype-flag t)
+                nil [6203 6336])
+            ("assert_not_arg" function
+               (:template 
+                  ( ("Pred" type (:type "class") nil nil))                  
+                :type ("assert" type (:type "class") nil nil)
+                :arguments 
+                  ( ("" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("Pred" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6425 6430]))                          
+                        :type "void")
+                        nil nil)
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("assert_arg_pred" type
+                             (:template-specifier 
+                                ( ("Pred" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6432 6463])
+                    ("" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6464 6470]))                  
+                :prototype-flag t)
+                nil [6338 6471])
+            ("BOOST_MPL_ASSERT" variable (:constant-flag t) nil [8763 8779])
+            ("BOOST_MPL_ASSERT_NOT" variable (:constant-flag t) nil [9458 9478])
+            ("BOOST_MPL_ASSERT_RELATION" variable (:constant-flag t) nil [12275 12300])
+            ("BOOST_MPL_ASSERT_MSG_IMPL" variable (:constant-flag t) nil [13428 13453])
+            ("BOOST_MPL_ASSERT_MSG" variable (:constant-flag t) nil [13969 13989]))          
+      :file "assert.hpp"
+      :pointmax 14130
+      :fsize 14129
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((symbol 7750 . 7791) (punctuation 6463 . 6464) (punctuation 6462 . 6463) (punctuation 6328 . 6329) (punctuation 6327 . 6328) (punctuation 6200 . 6201) (semantic-list 6075 . 6200) (punctuation 6073 . 6074) (punctuation 6072 . 6073) (punctuation 6071 . 6072) (punctuation 6070 . 6071) (punctuation 6069 . 6070) (punctuation 6068 . 6069) (punctuation 6067 . 6068) (punctuation 6066 . 6067) (punctuation 6065 . 6066) (punctuation 6064 . 6065) (punctuation 6063 . 6064) (punctuation 6062 . 6063) (symbol 6055 . 6061) (punctuation 6053 . 6054) (symbol 6048 . 6052) (TYPENAME 6039 . 6047) (punctuation 6037 . 6038) (TEMPLATE 6029 . 6037) (punctuation 6026 . 6027) (semantic-list 5927 . 6026) (punctuation 5925 . 5926) (punctuation 5924 . 5925) (punctuation 5923 . 5924) (punctuation 5922 . 5923) (punctuation 5921 . 5922) (punctuation 5920 . 5921) (punctuation 5919 . 5920) (punctuation 5918 . 5919) (punctuation 5917 . 5918) (punctuation 5916 . 5917) (punctuation 5915 . 5916) (punctuation 5914 . 5915) (symbol 5907 . 5913) (punctuation 5905 . 5906) (symbol 5900 . 5904) (TYPENAME 5891 . 5899) (punctuation 5889 . 5890) (TEMPLATE 5881 . 5889) (punctuation 5865 . 5866) (punctuation 5864 . 5865) (punctuation 5863 . 5864) (symbol 5862 . 5863) (punctuation 5861 . 5862) (symbol 5841 . 5861) (TYPENAME 5832 . 5840) (TYPEDEF 5824 . 5831) (punctuation 5652 . 5653) (punctuation 5651 . 5652) (punctuation 5650 . 5651) (symbol 5644 . 5649) (punctuation 5643 . 5644) (punctuation 5642 . 5643) (symbol 5636 . 5642) (punctuation 5634 . 5635) (symbol 5614 . 5634) (TYPENAME 5605 . 5613) (TYPEDEF 5597 . 5604) (punctuation 3772 . 3773) (semantic-list 3755 . 3771) (semantic-list 3752 . 3755) (BOOL 3747 . 3751) (punctuation 3745 . 3746) (semantic-list 3736 . 3745) (symbol 3713 . 3736) (punctuation 3711 . 3712) (semantic-list 3702 . 3711) (symbol 3679 . 3702) (punctuation 3677 . 3678) (TEMPLATE 3669 . 3677) (punctuation 2738 . 2739) (punctuation 2737 . 2738) (semantic-list 2659 . 2667) (symbol 2639 . 2659) (TYPEDEF 2631 . 2638) (symbol 2134 . 2174))
+      :lexical-table 
+        '(("BOOST_MPL_ASSERT_HPP_INCLUDED")
+          ("BOOST_MPL_ASSERT_MSG_IMPL" (spp-arg-list ("counter" "c" "msg" "types_") 13453 . 13480) . 
+              ((STRUCT "struct" 13484 . 13490) (symbol "msg" 13491 . 13494) (punctuation ";" 13494 . 13495) (TYPEDEF "typedef" 13498 . 13505) (STRUCT "struct" 13506 . 13512) (symbol "BOOST_PP_CAT" 13513 . 13525) (semantic-list "(msg,counter)" 13525 . 13538) (punctuation ":" 13539 . 13540) (symbol "boost" 13541 . 13546) (punctuation ":" 13546 . 13547) (punctuation ":" 13547 . 13548) (symbol "mpl" 13548 . 13551) (punctuation ":" 13551 . 13552) (punctuation ":" 13552 . 13553) (symbol "assert_" 13553 . 13560) (semantic-list "{ \\
+    static boost::mpl::failed ************ (msg::************ assert_arg()) types_ \\
+    { return 0; } \\
+}" 13563 . 13673) (symbol "BOOST_PP_CAT" 13674 . 13686) (semantic-list "(mpl_assert_arg,counter)" 13686 . 13710) (punctuation ";" 13710 . 13711) (symbol "BOOST_MPL_AUX_ASSERT_CONSTANT" 13714 . 13743) (semantic-list "( \\
+      std::size_t \\
+    , BOOST_PP_CAT(mpl_assertion_in_line_,counter) = sizeof( \\
+        boost::mpl::assertion_failed<(c)>( BOOST_PP_CAT(mpl_assert_arg,counter)::assert_arg() ) \\
+        ) \\
+    )" 13743 . 13945)))
+          ("BOOST_MPL_ASSERT_NOT" (spp-arg-list ("pred") 9478 . 9484) . ((symbol "BOOST_MPL_AUX_ASSERT_CONSTANT" 9487 . 9516) (semantic-list "( \\
+      std::size_t \\
+    , BOOST_PP_CAT(mpl_assertion_in_line_,BOOST_MPL_AUX_PP_COUNTER()) = sizeof( \\
+          boost::mpl::assertion_failed<false>( \\
+              boost::mpl::assert_not_arg( (void (*) pred)0, 1 ) \\
+            ) \\
+        ) \\
+   )" 9516 . 9769)))
+          ("BOOST_MPL_AUX_ASSERT_CONSTANT" (spp-arg-list ("T" "expr") 2084 . 2093) . ((symbol "BOOST_STATIC_CONSTANT" 2094 . 2115) (semantic-list "(T, expr)" 2115 . 2124)))
+          ("BOOST_MPL_ASSERT_MSG" (spp-arg-list ("c" "msg" "types_") 13989 . 14007) . ((symbol "BOOST_MPL_ASSERT_MSG_IMPL" 14010 . 14035) (semantic-list "( BOOST_MPL_AUX_PP_COUNTER(), c, msg, types_ )" 14035 . 14081)))
+          ("BOOST_MPL_ASSERT" (spp-arg-list ("pred") 8779 . 8785) . ((symbol "BOOST_MPL_AUX_ASSERT_CONSTANT" 8788 . 8817) (semantic-list "( \\
+      std::size_t \\
+    , BOOST_PP_CAT(mpl_assertion_in_line_,BOOST_MPL_AUX_PP_COUNTER()) = sizeof( \\
+          boost::mpl::assertion_failed<false>( \\
+              boost::mpl::assert_arg( (void (*) pred)0, 1 ) \\
+            ) \\
+        ) \\
+    )" 8817 . 9067)))
+          ("BOOST_MPL_ASSERT_RELATION" (spp-arg-list ("x" "rel" "y") 12300 . 12311) . ((symbol "BOOST_MPL_AUX_ASSERT_CONSTANT" 12314 . 12343) (semantic-list "( \\
+      std::size_t \\
+    , BOOST_PP_CAT(mpl_assertion_in_line_,BOOST_MPL_AUX_PP_COUNTER()) = sizeof( \\
+        boost::mpl::assertion_failed<(x rel y)>( (boost::mpl::failed ************ ( \\
+            boost::mpl::BOOST_MPL_AUX_ASSERT_RELATION(x,y,(&boost::mpl::operator rel))::************))0 ) \\
+        ) \\
+    )" 12343 . 12660)))
+          ("BOOST_MPL_AUX_ASSERT_RELATION" (spp-arg-list ("x" "y" "r") 3842 . 3851) . 
+              ((symbol "assert_relation" 3852 . 3867) (punctuation "<" 3867 . 3868) (symbol "x" 3868 . 3869) (punctuation "," 3869 . 3870) (symbol "y" 3870 . 3871) (punctuation "," 3871 . 3872) (symbol "r" 3872 . 3873) (punctuation ">" 3873 . 3874)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_APPLY_FWD_HPP_INCLUDED" variable (:constant-flag t) nil [107 139])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [478 513])
+            ("boost/mpl/aux_/config/use_preprocessed.hpp" include (:system-flag t) nil [522 575])
+            ("BOOST_MPL_PREPROCESSED_HEADER" variable (:constant-flag t) nil [689 718])
+            ("boost/mpl/aux_/include_preprocessed.hpp" include (:system-flag t) nil [733 786]))          
+      :file "apply_fwd.hpp"
+      :pointmax 2664
+      :fsize 2663
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 646 . 676) (symbol 639 . 646) (punctuation 638 . 639) (punctuation 636 . 637) (punctuation 635 . 636))
+      :lexical-table 
+        '(("BOOST_MPL_APPLY_FWD_HPP_INCLUDED")
+          ("BOOST_MPL_PREPROCESSED_HEADER" . 
+              ((symbol "apply_fwd" 719 . 728) (punctuation "." 728 . 729) (symbol "hpp" 729 . 732)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_APPLY_WRAP_HPP_INCLUDED" variable (:constant-flag t) nil [108 141])
+            ("boost/mpl/aux_/arity.hpp" include (:system-flag t) nil [480 518])
+            ("boost/mpl/aux_/has_apply.hpp" include (:system-flag t) nil [519 561])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [562 597])
+            ("boost/mpl/aux_/msvc_never_true.hpp" include (:system-flag t) nil [598 646])
+            ("boost/mpl/aux_/config/use_preprocessed.hpp" include (:system-flag t) nil [655 708])
+            ("BOOST_MPL_PREPROCESSED_HEADER" variable (:constant-flag t) nil [822 851])
+            ("boost/mpl/aux_/include_preprocessed.hpp" include (:system-flag t) nil [867 920]))          
+      :file "apply_wrap.hpp"
+      :pointmax 6178
+      :fsize 6177
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 779 . 809) (symbol 772 . 779) (punctuation 771 . 772) (punctuation 769 . 770) (punctuation 768 . 769))
+      :lexical-table 
+        '(("BOOST_MPL_APPLY_WRAP_HPP_INCLUDED")
+          ("BOOST_MPL_PREPROCESSED_HEADER" . 
+              ((symbol "apply_wrap" 852 . 862) (punctuation "." 862 . 863) (symbol "hpp" 863 . 866)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_LAMBDA_HPP_INCLUDED" variable (:constant-flag t) nil [48 77])
+            ("boost/mpl/lambda_fwd.hpp" include (:system-flag t) nil [373 408])
+            ("boost/mpl/bind.hpp" include (:system-flag t) nil [409 438])
+            ("boost/mpl/aux_/config/lambda.hpp" include (:system-flag t) nil [439 482])
+            ("boost/mpl/aux_/full_lambda.hpp" include (:system-flag t) nil [535 579]))          
+      :file "lambda.hpp"
+      :pointmax 781
+      :fsize 780
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_LAMBDA_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_HAS_XXX_HPP_INCLUDED" variable (:constant-flag t) nil [49 79])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [445 474])
+            ("boost/mpl/aux_/na_spec.hpp" include (:system-flag t) nil [475 512])
+            ("boost/mpl/aux_/type_wrapper.hpp" include (:system-flag t) nil [513 555])
+            ("boost/mpl/aux_/yes_no.hpp" include (:system-flag t) nil [556 592])
+            ("boost/mpl/aux_/config/gcc.hpp" include (:system-flag t) nil [593 633])
+            ("boost/mpl/aux_/config/has_xxx.hpp" include (:system-flag t) nil [634 678])
+            ("boost/mpl/aux_/config/msvc_typename.hpp" include (:system-flag t) nil [679 729])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [730 771])
+            ("boost/mpl/aux_/config/static_constant.hpp" include (:system-flag t) nil [772 824])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [825 872])
+            ("boost/preprocessor/array/elem.hpp" include (:system-flag t) nil [874 918])
+            ("boost/preprocessor/cat.hpp" include (:system-flag t) nil [919 956])
+            ("boost/preprocessor/control/if.hpp" include (:system-flag t) nil [957 1001])
+            ("boost/preprocessor/repetition/enum_params.hpp" include (:system-flag t) nil [1002 1058])
+            ("boost/preprocessor/repetition/enum_trailing_params.hpp" include (:system-flag t) nil [1059 1124])
+            ("BOOST_MPL_HAS_XXX_TRAIT_NAMED_DEF" variable (:constant-flag t) nil [7598 7631])
+            ("BOOST_MPL_HAS_XXX_TRAIT_DEF" variable (:constant-flag t) nil [8774 8801])
+            ("BOOST_MPL_HAS_XXX_NO_WRAPPED_TYPES" variable (:constant-flag t) nil [9456 9490])
+            ("BOOST_MPL_HAS_XXX_NO_EXPLICIT_TEST_FUNCTION" variable (:constant-flag t) nil [9730 9773])
+            ("BOOST_MPL_HAS_XXX_NEEDS_TEMPLATE_SFINAE" variable (:constant-flag t) nil [9986 10025])
+            ("BOOST_MPL_HAS_MEMBER_INTROSPECTION_NAME" variable (:constant-flag t) nil [10253 10292])
+            ("BOOST_MPL_HAS_MEMBER_INTROSPECTION_SUBSTITUTE_NAME" variable (:constant-flag t) nil [10387 10437])
+            ("BOOST_MPL_HAS_MEMBER_INTROSPECTION_TEST_NAME" variable (:constant-flag t) nil [10552 10596])
+            ("BOOST_MPL_HAS_MEMBER_MULTI_SUBSTITUTE" variable (:constant-flag t) nil [10931 10968])
+            ("BOOST_MPL_HAS_MEMBER_SUBSTITUTE" variable (:constant-flag t) nil [11203 11234])
+            ("BOOST_MPL_HAS_MEMBER_REJECT" variable (:constant-flag t) nil [11479 11506])
+            ("BOOST_MPL_HAS_MEMBER_MULTI_ACCEPT" variable (:constant-flag t) nil [11939 11972])
+            ("BOOST_MPL_HAS_MEMBER_ACCEPT" variable (:constant-flag t) nil [12382 12409])
+            ("BOOST_MPL_HAS_MEMBER_TEST" variable (:constant-flag t) nil [12977 13002])
+            ("BOOST_MPL_HAS_MEMBER_INTROSPECT" variable (:constant-flag t) nil [13803 13834])
+            ("BOOST_MPL_HAS_MEMBER_IMPLEMENTATION" variable (:constant-flag t) nil [14386 14421])
+            ("BOOST_MPL_HAS_MEMBER_WITH_FUNCTION_SFINAE" variable (:constant-flag t) nil [15240 15281])
+            ("BOOST_MPL_HAS_XXX_TEMPLATE_NAMED_DEF" variable (:constant-flag t) nil [20699 20735])
+            ("BOOST_MPL_HAS_XXX_TEMPLATE_DEF" variable (:constant-flag t) nil [21857 21887]))          
+      :file "has_xxx.hpp"
+      :pointmax 22053
+      :fsize 22052
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_HAS_MEMBER_INTROSPECTION_TEST_NAME" (spp-arg-list ("args") 10596 . 10602) . ((symbol "BOOST_PP_CAT" 10611 . 10623) (semantic-list "(BOOST_PP_ARRAY_ELEM(0, args) , _test)" 10623 . 10661)))
+          ("BOOST_MPL_HAS_MEMBER_ACCEPT" (spp-arg-list ("args" "member_macro") 12409 . 12429) . ((symbol "BOOST_PP_REPEAT" 12440 . 12455) (semantic-list "( \\
+            BOOST_PP_ARRAY_ELEM(2, args) \\
+          , BOOST_MPL_HAS_MEMBER_MULTI_ACCEPT \\
+          , args \\
+        )" 12455 . 12578)))
+          ("BOOST_MPL_HAS_XXX_TEMPLATE_DEF" (spp-arg-list ("name") 21887 . 21893) . ((symbol "BOOST_MPL_HAS_XXX_TEMPLATE_NAMED_DEF" 21902 . 21938) (semantic-list "( \\
+          BOOST_PP_CAT(has_, name), name, false \\
+      )" 21938 . 21999)))
+          ("BOOST_MPL_HAS_XXX_HPP_INCLUDED")
+          ("BOOST_MPL_HAS_XXX_TRAIT_DEF" (spp-arg-list ("name") 8801 . 8807) . ((symbol "BOOST_MPL_HAS_XXX_TRAIT_NAMED_DEF" 8814 . 8847) (semantic-list "(BOOST_PP_CAT(has_,name), name, false)" 8847 . 8885)))
+          ("BOOST_MPL_HAS_XXX_NO_WRAPPED_TYPES" . ((number "0" 9491 . 9492)))
+          ("BOOST_MPL_HAS_MEMBER_MULTI_SUBSTITUTE" (spp-arg-list ("z" "n" "args") 10968 . 10980) . 
+              ((TEMPLATE "template" 10989 . 10997) (punctuation "<" 10997 . 10998) (TEMPLATE "template" 11011 . 11019) (punctuation "<" 11019 . 11020) (symbol "BOOST_PP_ENUM_PARAMS" 11021 . 11041) (semantic-list "(BOOST_PP_INC(n), typename V)" 11041 . 11070) (punctuation ">" 11071 . 11072) (CLASS "class" 11073 . 11078) (symbol "V" 11079 . 11080) (punctuation ">" 11090 . 11091) (STRUCT "struct" 11100 . 11106) (symbol "BOOST_MPL_HAS_MEMBER_INTROSPECTION_SUBSTITUTE_NAME" 11107 . 11157) (semantic-list "(args, n)" 11157 . 11166) (semantic-list "{ \\
+      }" 11167 . 11178) (punctuation ";" 11178 . 11179)))
+          ("BOOST_MPL_HAS_MEMBER_WITH_FUNCTION_SFINAE" (spp-arg-list ("\\
+" "args" "substitute_macro" "member_macro" "\\
+") 15281 . 15351) . ((symbol "BOOST_MPL_HAS_MEMBER_IMPLEMENTATION" 15360 . 15395) (semantic-list "( \\
+          args \\
+        , BOOST_MPL_HAS_MEMBER_INTROSPECT \\
+        , substitute_macro \\
+        , member_macro \\
+      )" 15395 . 15521)))
+          ("BOOST_MPL_HAS_XXX_TEMPLATE_NAMED_DEF" (spp-arg-list ("trait" "name" "default_") 20735 . 20758) . ((symbol "BOOST_MPL_HAS_MEMBER_WITH_FUNCTION_SFINAE" 20769 . 20810) (semantic-list "( \\
+            ( 4, ( trait, name, BOOST_MPL_LIMIT_METAFUNCTION_ARITY, default_ ) ) \\
+          , BOOST_MPL_HAS_MEMBER_TEMPLATE_SUBSTITUTE_PARAMETER \\
+          , BOOST_MPL_HAS_MEMBER_TEMPLATE_ACCESS \\
+        )" 20810 . 21022)))
+          ("BOOST_MPL_HAS_XXX_NEEDS_TEMPLATE_SFINAE" . ((number "0" 10026 . 10027)))
+          ("BOOST_MPL_HAS_MEMBER_SUBSTITUTE" (spp-arg-list ("args" "substitute_macro") 11234 . 11258) . ((symbol "BOOST_PP_REPEAT" 11267 . 11282) (semantic-list "( \\
+          BOOST_PP_ARRAY_ELEM(2, args) \\
+        , BOOST_MPL_HAS_MEMBER_MULTI_SUBSTITUTE \\
+        , args \\
+      )" 11282 . 11401)))
+          ("BOOST_MPL_HAS_MEMBER_IMPLEMENTATION" (spp-arg-list ("\\
+" "args" "introspect_macro" "substitute_macro" "member_macro" "\\
+") 14421 . 14509) . 
+              ((TEMPLATE "template" 14518 . 14526) (punctuation "<" 14526 . 14527) (TYPENAME "typename" 14540 . 14548) (symbol "T" 14549 . 14550) (punctuation "," 14561 . 14562) (TYPENAME "typename" 14563 . 14571) (symbol "fallback_" 14572 . 14581) (punctuation "=" 14598 . 14599) (symbol "boost" 14600 . 14605) (punctuation ":" 14605 . 14606) (punctuation ":" 14606 . 14607) (symbol "mpl" 14607 . 14610) (punctuation ":" 14610 . 14611) (punctuation ":" 14611 . 14612) (symbol "bool_" 14612 . 14617) (punctuation "<" 14617 . 14618) (symbol "BOOST_PP_ARRAY_ELEM" 14619 . 14638) (semantic-list "(3, args)" 14638 . 14647) (punctuation ">" 14648 . 14649) (punctuation ">" 14658 . 14659) (CLASS "class" 14668 . 14673) (symbol "BOOST_PP_ARRAY_ELEM" 14674 . 14693) (semantic-list "(0, args)" 14693 . 14702) (semantic-list "{ \\
+          introspect_macro(args, substitute_macro, member_macro) \\
+      public: \\
+          static const bool value \\
+              = BOOST_MPL_HAS_MEMBER_INTROSPECTION_NAME(args)< T >::value; \\
+          typedef typename BOOST_MPL_HAS_MEMBER_INTROSPECTION_NAME(args)< \\
+              T \\
+          >::type type; \\
+      }" 14703 . 15030) (punctuation ";" 15030 . 15031)))
+          ("BOOST_MPL_HAS_MEMBER_INTROSPECTION_NAME" (spp-arg-list ("args") 10292 . 10298) . ((symbol "BOOST_PP_CAT" 10307 . 10319) (semantic-list "(BOOST_PP_ARRAY_ELEM(0, args) , _introspect)" 10319 . 10363)))
+          ("BOOST_MPL_HAS_MEMBER_TEST" (spp-arg-list ("args") 13002 . 13008) . 
+              ((SIZEOF "sizeof" 13021 . 13027) (semantic-list "(BOOST_MPL_HAS_MEMBER_INTROSPECTION_TEST_NAME(args)< U >(0))" 13027 . 13087) (punctuation "=" 13104 . 13105) (punctuation "=" 13105 . 13106) (SIZEOF "sizeof" 13107 . 13113) (semantic-list "(boost::mpl::aux::yes_tag)" 13113 . 13139)))
+          ("BOOST_MPL_HAS_XXX_TRAIT_NAMED_DEF" (spp-arg-list ("trait" "name" "default_") 7631 . 7654) . 
+              ((TEMPLATE "template" 7657 . 7665) (punctuation "<" 7665 . 7666) (TYPENAME "typename" 7667 . 7675) (symbol "T" 7676 . 7677) (punctuation "," 7677 . 7678) (TYPENAME "typename" 7679 . 7687) (symbol "fallback_" 7688 . 7697) (punctuation "=" 7698 . 7699) (symbol "boost" 7700 . 7705) (punctuation ":" 7705 . 7706) (punctuation ":" 7706 . 7707) (symbol "mpl" 7707 . 7710) (punctuation ":" 7710 . 7711) (punctuation ":" 7711 . 7712) (symbol "bool_" 7712 . 7717) (punctuation "<" 7717 . 7718) (symbol "default_" 7718 . 7726) (punctuation ">" 7726 . 7727) (punctuation ">" 7728 . 7729) (STRUCT "struct" 7732 . 7738) (symbol "trait" 7739 . 7744) (semantic-list "{ \\
+    struct gcc_3_2_wknd \\
+    { \\
+        template< typename U > \\
+        static boost::mpl::aux::yes_tag test( \\
+              boost::mpl::aux::type_wrapper<U> const volatile* \\
+            , boost::mpl::aux::type_wrapper<BOOST_MSVC_TYPENAME U::name>* = 0 \\
+            ); \\
+    \\
+        static boost::mpl::aux::no_tag test(...); \\
+    }; \\
+    \\
+    typedef boost::mpl::aux::type_wrapper<T> t_; \\
+    BOOST_STATIC_CONSTANT(bool, value = \\
+          sizeof(gcc_3_2_wknd::test(static_cast<t_*>(0))) \\
+            == sizeof(boost::mpl::aux::yes_tag) \\
+        ); \\
+    typedef boost::mpl::bool_<value> type; \\
+}" 7747 . 8363) (punctuation ";" 8363 . 8364)))
+          ("BOOST_MPL_HAS_MEMBER_INTROSPECTION_SUBSTITUTE_NAME" (spp-arg-list ("args" "n") 10437 . 10446) . ((symbol "BOOST_PP_CAT" 10455 . 10467) (semantic-list "(BOOST_PP_CAT(BOOST_PP_ARRAY_ELEM(0, args) , _substitute), n)" 10467 . 10528)))
+          ("BOOST_MPL_HAS_MEMBER_INTROSPECT" (spp-arg-list ("\\
+" "args" "substitute_macro" "member_macro" "\\
+") 13834 . 13904) . 
+              ((TEMPLATE "template" 13913 . 13921) (punctuation "<" 13921 . 13922) (TYPENAME "typename" 13923 . 13931) (symbol "U" 13932 . 13933) (punctuation ">" 13934 . 13935) (STRUCT "struct" 13944 . 13950) (symbol "BOOST_MPL_HAS_MEMBER_INTROSPECTION_NAME" 13951 . 13990) (semantic-list "(args)" 13990 . 13996) (semantic-list "{ \\
+          BOOST_MPL_HAS_MEMBER_SUBSTITUTE(args, substitute_macro) \\
+          BOOST_MPL_HAS_MEMBER_REJECT(args, member_macro) \\
+          BOOST_MPL_HAS_MEMBER_ACCEPT(args, member_macro) \\
+          BOOST_STATIC_CONSTANT( \\
+              bool, value = BOOST_MPL_HAS_MEMBER_TEST(args) \\
+          ); \\
+          typedef boost::mpl::bool_< value > type; \\
+      }" 13997 . 14361) (punctuation ";" 14361 . 14362)))
+          ("BOOST_MPL_HAS_XXX_NO_EXPLICIT_TEST_FUNCTION" . ((number "0" 9774 . 9775)))
+          ("BOOST_MPL_HAS_MEMBER_REJECT" (spp-arg-list ("args" "member_macro") 11506 . 11526) . 
+              ((TEMPLATE "template" 11537 . 11545) (punctuation "<" 11545 . 11546) (TYPENAME "typename" 11547 . 11555) (symbol "V" 11556 . 11557) (punctuation ">" 11558 . 11559) (STATIC "static" 11570 . 11576) (symbol "boost" 11577 . 11582) (punctuation ":" 11582 . 11583) (punctuation ":" 11583 . 11584) (symbol "mpl" 11584 . 11587) (punctuation ":" 11587 . 11588) (punctuation ":" 11588 . 11589) (symbol "aux" 11589 . 11592) (punctuation ":" 11592 . 11593) (punctuation ":" 11593 . 11594) (symbol "no_tag" 11594 . 11600) (symbol "BOOST_MPL_HAS_MEMBER_INTROSPECTION_TEST_NAME" 11611 . 11655) (semantic-list "(args)" 11655 . 11661) (semantic-list "(...)" 11661 . 11666) (punctuation ";" 11666 . 11667)))
+          ("BOOST_MPL_HAS_MEMBER_MULTI_ACCEPT" (spp-arg-list ("z" "n" "args") 11972 . 11984) . 
+              ((TEMPLATE "template" 11995 . 12003) (punctuation "<" 12003 . 12004) (TYPENAME "typename" 12005 . 12013) (symbol "V" 12014 . 12015) (punctuation ">" 12016 . 12017) (STATIC "static" 12028 . 12034) (symbol "boost" 12035 . 12040) (punctuation ":" 12040 . 12041) (punctuation ":" 12041 . 12042) (symbol "mpl" 12042 . 12045) (punctuation ":" 12045 . 12046) (punctuation ":" 12046 . 12047) (symbol "aux" 12047 . 12050) (punctuation ":" 12050 . 12051) (punctuation ":" 12051 . 12052) (symbol "yes_tag" 12052 . 12059) (symbol "BOOST_MPL_HAS_MEMBER_INTROSPECTION_TEST_NAME" 12070 . 12114) (semantic-list "(args)" 12114 . 12120) (semantic-list "( \\
+            boost::mpl::aux::type_wrapper< V > const volatile* \\
+          , BOOST_MPL_HAS_MEMBER_INTROSPECTION_SUBSTITUTE_NAME(args, n) < \\
+                V::template BOOST_PP_ARRAY_ELEM(1, args) \\
+            >* = 0 \\
+        )" 12120 . 12354) (punctuation ";" 12354 . 12355)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_BOOL_FWD_HPP_INCLUDED" variable (:constant-flag t) nil [50 81])
+            ("boost/mpl/aux_/adl_barrier.hpp" include (:system-flag t) nil [377 418])
+            ("bool_" type
+               (:template 
+                  ( ("bool" type (:typevar "C_") nil nil))                  
+                :type "struct"
+                :prototype t)
+                nil [462 495])
+            ("true_" type
+               (:typedef ("bool_" type
+                     (:template-specifier 
+                        ( ("true" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [509 535])
+            ("false_" type
+               (:typedef ("bool_" type
+                     (:template-specifier 
+                        ( ("false" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :type "typedef")
+                nil [536 564]))          
+      :file "bool_fwd.hpp"
+      :pointmax 767
+      :fsize 766
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 715 . 723) (symbol 685 . 715) (semantic-list 677 . 684) (symbol 647 . 677) (semantic-list 639 . 646) (symbol 609 . 639) (symbol 566 . 607) (symbol 420 . 460))
+      :lexical-table 
+        '(("BOOST_MPL_BOOL_FWD_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_INTEGRAL_C_TAG_HPP_INCLUDED" variable (:constant-flag t) nil [56 93])
+            ("boost/mpl/aux_/adl_barrier.hpp" include (:system-flag t) nil [385 426])
+            ("boost/mpl/aux_/config/static_constant.hpp" include (:system-flag t) nil [427 479])
+            ("integral_c_tag" type
+               (:members 
+                  ( ("BOOST_STATIC_CONSTANT" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [568 572])
+                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [573 582]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [546 584]))                  
+                :type "struct")
+                nil [522 587]))          
+      :file "integral_c_tag.hpp"
+      :pointmax 726
+      :fsize 725
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 660 . 676) (symbol 630 . 660) (symbol 588 . 629) (symbol 481 . 521))
+      :lexical-table 
+        '(("BOOST_MPL_INTEGRAL_C_TAG_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_ARG_HPP_INCLUDED" variable (:constant-flag t) nil [101 127])
+            ("boost/mpl/arg_fwd.hpp" include (:system-flag t) nil [501 536])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [537 572])
+            ("boost/mpl/aux_/na_assert.hpp" include (:system-flag t) nil [573 615])
+            ("boost/mpl/aux_/arity_spec.hpp" include (:system-flag t) nil [616 659])
+            ("boost/mpl/aux_/arg_typedef.hpp" include (:system-flag t) nil [660 704])
+            ("boost/mpl/aux_/config/static_constant.hpp" include (:system-flag t) nil [713 765])
+            ("boost/mpl/aux_/config/use_preprocessed.hpp" include (:system-flag t) nil [766 819])
+            ("BOOST_MPL_PREPROCESSED_HEADER" variable (:constant-flag t) nil [933 962])
+            ("boost/mpl/aux_/include_preprocessed.hpp" include (:system-flag t) nil [971 1024]))          
+      :file "arg.hpp"
+      :pointmax 3217
+      :fsize 3216
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 890 . 920) (symbol 883 . 890) (punctuation 882 . 883) (punctuation 880 . 881) (punctuation 879 . 880))
+      :lexical-table 
+        '(("BOOST_MPL_ARG_HPP_INCLUDED")
+          ("BOOST_MPL_PREPROCESSED_HEADER" . 
+              ((symbol "arg" 963 . 966) (punctuation "." 966 . 967) (symbol "hpp" 967 . 970)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_LAMBDA_FWD_HPP_INCLUDED" variable (:constant-flag t) nil [52 85])
+            ("boost/mpl/void_fwd.hpp" include (:system-flag t) nil [381 414])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [415 447])
+            ("boost/mpl/aux_/config/lambda.hpp" include (:system-flag t) nil [448 491])
+            ("boost/mpl/int.hpp" include (:system-flag t) nil [545 576])
+            ("boost/mpl/aux_/lambda_arity_param.hpp" include (:system-flag t) nil [577 628])
+            ("boost/mpl/aux_/template_arity_fwd.hpp" include (:system-flag t) nil [629 680])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("lambda" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [896 910]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [700 913]))                  
+                :type "namespace")
+                nil [682 914]))          
+      :file "lambda_fwd.hpp"
+      :pointmax 1202
+      :fsize 1201
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((punctuation 894 . 895) (semantic-list 813 . 889) (symbol 781 . 813) (punctuation 878 . 879) (punctuation 846 . 847) (symbol 771 . 776) (punctuation 878 . 879) (punctuation 846 . 847) (punctuation 769 . 770) (symbol 765 . 768) (TYPENAME 756 . 764) (punctuation 754 . 755) (symbol 747 . 749) (punctuation 745 . 746) (symbol 743 . 744) (TYPENAME 734 . 742) (punctuation 725 . 726) (TEMPLATE 717 . 725))
+      :lexical-table 
+        '(("BOOST_MPL_LAMBDA_FWD_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_INT_HPP_INCLUDED" variable (:constant-flag t) nil [45 71])
+            ("boost/mpl/int_fwd.hpp" include (:system-flag t) nil [367 399])
+            ("AUX_WRAPPER_VALUE_TYPE" variable (:constant-flag t) nil [409 431])
+            ("boost/mpl/aux_/integral_wrapper.hpp" include (:system-flag t) nil [436 482]))          
+      :file "int.hpp"
+      :pointmax 521
+      :fsize 520
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AUX_WRAPPER_VALUE_TYPE" . ((INT "int" 432 . 435)))
+          ("BOOST_MPL_INT_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_BIND_HPP_INCLUDED" variable (:constant-flag t) nil [102 129])
+            ("boost/mpl/bind_fwd.hpp" include (:system-flag t) nil [498 534])
+            ("boost/mpl/placeholders.hpp" include (:system-flag t) nil [535 575])
+            ("boost/mpl/next.hpp" include (:system-flag t) nil [576 608])
+            ("boost/mpl/protect.hpp" include (:system-flag t) nil [609 644])
+            ("boost/mpl/apply_wrap.hpp" include (:system-flag t) nil [645 683])
+            ("boost/mpl/limits/arity.hpp" include (:system-flag t) nil [684 724])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [725 760])
+            ("boost/mpl/aux_/arity_spec.hpp" include (:system-flag t) nil [761 804])
+            ("boost/mpl/aux_/type_wrapper.hpp" include (:system-flag t) nil [805 850])
+            ("boost/mpl/aux_/yes_no.hpp" include (:system-flag t) nil [851 890])
+            ("boost/mpl/aux_/config/bind.hpp" include (:system-flag t) nil [1020 1061])
+            ("boost/mpl/aux_/config/static_constant.hpp" include (:system-flag t) nil [1062 1114])
+            ("boost/mpl/aux_/config/use_preprocessed.hpp" include (:system-flag t) nil [1115 1168])
+            ("BOOST_MPL_PREPROCESSED_HEADER" variable (:constant-flag t) nil [1416 1445])
+            ("boost/mpl/aux_/include_preprocessed.hpp" include (:system-flag t) nil [1465 1518]))          
+      :file "bind.hpp"
+      :pointmax 14952
+      :fsize 14951
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 1239 . 1269) (symbol 1232 . 1239) (punctuation 1231 . 1232) (punctuation 1229 . 1230) (punctuation 1228 . 1229))
+      :lexical-table 
+        '(("BOOST_MPL_BIND_HPP_INCLUDED")
+          ("BOOST_MPL_PREPROCESSED_HEADER" . 
+              ((symbol "bind" 1446 . 1450) (punctuation "." 1450 . 1451) (symbol "hpp" 1451 . 1454)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_ARG_FWD_HPP_INCLUDED" variable (:constant-flag t) nil [49 79])
+            ("boost/mpl/aux_/adl_barrier.hpp" include (:system-flag t) nil [410 451])
+            ("boost/mpl/aux_/nttp_decl.hpp" include (:system-flag t) nil [452 491])
+            ("arg" type
+               (:prototype t
+                :type "struct")
+                nil [579 590]))          
+      :file "arg_fwd.hpp"
+      :pointmax 712
+      :fsize 711
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 664 . 669) (symbol 634 . 664) (symbol 592 . 633) (punctuation 577 . 578) (semantic-list 568 . 576) (symbol 545 . 568) (punctuation 543 . 544) (TEMPLATE 535 . 543) (symbol 493 . 533))
+      :lexical-table 
+        '(("BOOST_MPL_ARG_FWD_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_VOID_FWD_HPP_INCLUDED" variable (:constant-flag t) nil [50 81])
+            ("boost/mpl/aux_/adl_barrier.hpp" include (:system-flag t) nil [377 418])
+            ("void_" type
+               (:prototype t
+                :type "struct")
+                nil [462 475]))          
+      :file "void_fwd.hpp"
+      :pointmax 600
+      :fsize 599
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 549 . 556) (symbol 519 . 549) (symbol 477 . 518) (symbol 420 . 460))
+      :lexical-table 
+        '(("BOOST_MPL_VOID_FWD_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_INT_FWD_HPP_INCLUDED" variable (:constant-flag t) nil [49 79])
+            ("boost/mpl/aux_/adl_barrier.hpp" include (:system-flag t) nil [375 416])
+            ("boost/mpl/aux_/nttp_decl.hpp" include (:system-flag t) nil [417 456])
+            ("int_" type
+               (:prototype t
+                :type "struct")
+                nil [544 556]))          
+      :file "int_fwd.hpp"
+      :pointmax 679
+      :fsize 678
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 630 . 636) (symbol 600 . 630) (symbol 558 . 599) (punctuation 542 . 543) (semantic-list 533 . 541) (symbol 510 . 533) (punctuation 508 . 509) (TEMPLATE 500 . 508) (symbol 458 . 498))
+      :lexical-table 
+        '(("BOOST_MPL_INT_FWD_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_BIND_FWD_HPP_INCLUDED" variable (:constant-flag t) nil [106 137])
+            ("boost/mpl/aux_/na.hpp" include (:system-flag t) nil [476 511])
+            ("boost/mpl/aux_/config/bind.hpp" include (:system-flag t) nil [520 561])
+            ("boost/mpl/aux_/config/use_preprocessed.hpp" include (:system-flag t) nil [562 615])
+            ("BOOST_MPL_PREPROCESSED_HEADER" variable (:constant-flag t) nil [729 758])
+            ("boost/mpl/aux_/include_preprocessed.hpp" include (:system-flag t) nil [772 825]))          
+      :file "bind_fwd.hpp"
+      :pointmax 2494
+      :fsize 2493
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 686 . 716) (symbol 679 . 686) (punctuation 678 . 679) (punctuation 676 . 677) (punctuation 675 . 676))
+      :lexical-table 
+        '(("BOOST_MPL_BIND_FWD_HPP_INCLUDED")
+          ("BOOST_MPL_PREPROCESSED_HEADER" . 
+              ((symbol "bind_fwd" 759 . 767) (punctuation "." 767 . 768) (symbol "hpp" 768 . 771)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_NEXT_HPP_INCLUDED" variable (:constant-flag t) nil [46 73])
+            ("boost/mpl/next_prior.hpp" include (:system-flag t) nil [364 399]))          
+      :file "next.hpp"
+      :pointmax 439
+      :fsize 438
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_MPL_NEXT_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_PROTECT_HPP_INCLUDED" variable (:constant-flag t) nil [49 79])
+            ("boost/mpl/aux_/arity.hpp" include (:system-flag t) nil [405 440])
+            ("boost/mpl/aux_/config/dtp.hpp" include (:system-flag t) nil [441 481])
+            ("boost/mpl/aux_/nttp_decl.hpp" include (:system-flag t) nil [482 521])
+            ("boost/mpl/aux_/na_spec.hpp" include (:system-flag t) nil [522 559])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("protect" type
+                               (:superclasses 
+                                  ( ("T" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("protect" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [783 804]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [675 814]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [579 1194]))                  
+                :type "namespace")
+                nil [561 1195]))          
+      :file "protect.hpp"
+      :pointmax 1238
+      :fsize 1237
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 1169 . 1184) (symbol 1133 . 1169) (number 1173 . 1174) (number 1170 . 1171) (semantic-list 1069 . 1081) (symbol 1043 . 1069) (number 1070 . 1071) (punctuation 673 . 674) (number 667 . 668) (punctuation 665 . 666) (symbol 657 . 664) (INT 653 . 656) (punctuation 651 . 652) (semantic-list 643 . 646) (symbol 621 . 643) (TYPENAME 612 . 620) (punctuation 604 . 605) (TEMPLATE 596 . 604))
+      :lexical-table 
+        '(("BOOST_MPL_PROTECT_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_QUOTE_HPP_INCLUDED" variable (:constant-flag t) nil [103 131])
+            ("boost/mpl/void.hpp" include (:system-flag t) nil [470 502])
+            ("boost/mpl/aux_/has_type.hpp" include (:system-flag t) nil [503 544])
+            ("boost/mpl/aux_/config/bcc.hpp" include (:system-flag t) nil [553 593])
+            ("boost/mpl/aux_/config/ttp.hpp" include (:system-flag t) nil [594 634])
+            ("boost/mpl/aux_/config/use_preprocessed.hpp" include (:system-flag t) nil [954 1007])
+            ("BOOST_MPL_PREPROCESSED_HEADER" variable (:constant-flag t) nil [1118 1147])
+            ("boost/mpl/aux_/include_preprocessed.hpp" include (:system-flag t) nil [1158 1211]))          
+      :file "quote.hpp"
+      :pointmax 3635
+      :fsize 3634
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 1075 . 1105) (symbol 1068 . 1075) (punctuation 1067 . 1068) (punctuation 1065 . 1066) (punctuation 1064 . 1065))
+      :lexical-table 
+        '(("BOOST_MPL_QUOTE_HPP_INCLUDED")
+          ("BOOST_MPL_PREPROCESSED_HEADER" . 
+              ((symbol "quote" 1148 . 1153) (punctuation "." 1153 . 1154) (symbol "hpp" 1154 . 1157)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_NEXT_PRIOR_HPP_INCLUDED" variable (:constant-flag t) nil [52 85])
+            ("boost/mpl/aux_/common_name_wknd.hpp" include (:system-flag t) nil [381 427])
+            ("boost/mpl/aux_/na_spec.hpp" include (:system-flag t) nil [428 465])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [466 510])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("next" type
+                               (:members 
+                                  ( ("type" type
+                                       (:typedef ("T::next" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [698 728]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [680 776])
+                            ("prior" type
+                               (:members 
+                                  ( ("type" type
+                                       (:typedef ("T::prior" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [854 885]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [835 934]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [530 1001]))                  
+                :type "namespace")
+                nil [512 1002]))          
+      :file "next_prior.hpp"
+      :pointmax 1048
+      :fsize 1047
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 988 . 998) (symbol 967 . 988) (number 989 . 990) (semantic-list 957 . 966) (symbol 936 . 957) (number 958 . 959) (semantic-list 918 . 931) (symbol 890 . 918) (semantic-list 927 . 930) (number 919 . 920) (punctuation 833 . 834) (semantic-list 825 . 828) (symbol 803 . 825) (TYPENAME 794 . 802) (punctuation 786 . 787) (TEMPLATE 778 . 786) (semantic-list 761 . 773) (symbol 733 . 761) (semantic-list 769 . 772) (number 762 . 763) (punctuation 678 . 679) (semantic-list 670 . 673) (symbol 648 . 670) (TYPENAME 639 . 647) (punctuation 631 . 632) (TEMPLATE 623 . 631) (semantic-list 614 . 621) (symbol 584 . 614) (semantic-list 577 . 583) (symbol 547 . 577))
+      :lexical-table 
+        '(("BOOST_MPL_NEXT_PRIOR_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_MPL_VOID_HPP_INCLUDED" variable (:constant-flag t) nil [46 73])
+            ("boost/mpl/void_fwd.hpp" include (:system-flag t) nil [369 402])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [403 432])
+            ("boost/mpl/aux_/na_spec.hpp" include (:system-flag t) nil [433 470])
+            ("boost/mpl/aux_/config/msvc.hpp" include (:system-flag t) nil [471 512])
+            ("boost/mpl/aux_/config/workaround.hpp" include (:system-flag t) nil [513 560])
+            ("void_" type
+               (:members 
+                  ( ("type" type
+                       (:typedef ("void_" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [872 891]))                  
+                :type "struct")
+                nil [857 894])
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("is_void_" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("false_" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [974 1103])
+                            ("is_void_" type
+                               (:type "struct"
+                                :superclasses 
+                                  ( ("true_" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("void_" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1105 1227])
+                            ("is_not_void_" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :superclasses 
+                                  ( ("true_" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1229 1360])
+                            ("is_not_void_" type
+                               (:type "struct"
+                                :superclasses 
+                                  ( ("false_" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("void_" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1362 1490]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [957 1568]))                  
+                :type "namespace")
+                nil [939 1569]))          
+      :file "void.hpp"
+      :pointmax 1609
+      :fsize 1608
+      :lastmodtime '(22431 53995 0 0)
+      :unmatched-syntax '((semantic-list 1548 . 1565) (symbol 1527 . 1548) (number 1549 . 1550) (semantic-list 1513 . 1526) (symbol 1492 . 1513) (number 1514 . 1515) (symbol 896 . 937) (symbol 562 . 602))
+      :lexical-table 
+        '(("BOOST_MPL_VOID_HPP_INCLUDED")
+          )
+))
+  :file "!usr!include!boost!mpl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
