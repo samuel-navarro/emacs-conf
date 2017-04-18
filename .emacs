@@ -381,34 +381,6 @@
 ;; SCALE FONT
 ;; ---------------------------------------------------------------------------
 (set-face-attribute 'default (selected-frame) :height 135)
-
-
-;; ---------------------------------------------------------------------------
-;; EMACS AS C++ IDE
-;; ---------------------------------------------------------------------------
-(when (not package-archive-contents)
-    (package-refresh-contents))
-
-(unless (package-installed-p 'use-package)
-  (package-install 'use-package))
-
-(require 'use-package)
-(setq use-package-always-ensure t)
-
-(add-to-list 'load-path "~/.emacs.d/custom")
-
-(require 'setup-general)
-(if (version< emacs-version "24.4")
-    (require 'setup-ivy-counsel)
-  (require 'setup-helm)
-  (require 'setup-helm-gtags))
-;; (require 'setup-ggtags)
-(require 'setup-cedet)
-(require 'setup-editing)
-
-;; function-args
-;; (require 'function-args)
-;; (fa-config-default)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -416,7 +388,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (d-mode json-mode helm-bind-key neotree sr-speedbar ggtags rtags cmake-ide))))
+    (zygospore yasnippet ws-butler volatile-highlights use-package undo-tree sr-speedbar rtags rpm-spec-mode neotree json-mode iedit helm-swoop helm-projectile helm-gtags ggtags dtrt-indent d-mode company cmake-ide clean-aindent-mode anzu))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -424,24 +396,11 @@
  ;; If there is more than one, they won't work right.
  )
 
-(require 'ggtags)
-(add-hook 'c-mode-common-hook
-          (lambda ()
-            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
-              (ggtags-mode 1))))
-
-(define-key ggtags-mode-map (kbd "C-c g s") 'ggtags-find-other-symbol)
-(define-key ggtags-mode-map (kbd "C-c g h") 'ggtags-view-tag-history)
-(define-key ggtags-mode-map (kbd "C-c g r") 'ggtags-find-reference)
-(define-key ggtags-mode-map (kbd "C-c g f") 'ggtags-find-file)
-(define-key ggtags-mode-map (kbd "C-c g c") 'ggtags-create-tags)
-(define-key ggtags-mode-map (kbd "C-c g u") 'ggtags-update-tags)
-
-(define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
-
-;; Company mode completion (with clang)
-(require 'company)
-(add-hook 'after-init-hook 'global-company-mode)
-(setq company-backends (delete 'company-semantic company-backends))
-(define-key c-mode-map  (kbd "M-/") 'company-complete)
-(define-key c++-mode-map  (kbd "M-/") 'company-complete)
+;; ---------------------------------------------------------------------------
+;; HELM
+;; ---------------------------------------------------------------------------
+(require 'helm-config)
+(global-set-key (kbd "M-x") #'helm-M-x)
+(global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
+(global-set-key (kbd "C-x C-f") #'helm-find-files)
+(helm-mode 1)
