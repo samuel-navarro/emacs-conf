@@ -42,25 +42,6 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize)
 
-
-;; ---------------------------------------------------------------------------
-;; CMake-IDE
-;;----------------------------------------------------------------------------
-(require 'rtags) ;; optional, must have rtags installed
-(cmake-ide-setup)
-
-;;(setq cmake-ide-flags-c++ "-IC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/include \
-;;      -IC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/../../../../include \
-;;      -IC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/include-fixed \
-;;      -IC:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/5.3.0/../../../../x86_64-w64-mingw32/include \
-;;      -IC:/msys64/mingw64/lib/gcc/../../include/c++/5.3.0 \
-;;      -IC:/msys64/mingw64/lib/gcc/../../include/c++/5.3.0/x86_64-w64-mingw32 \
-;;      -IC:/msys64/mingw64/lib/gcc/../../include/c++/5.3.0/backward")
-;;
-;;(setq cmake-ide-flags-c 'cmake-ide-flags-c++)
-
-
-
 ;; ---------------------------------------------------------------------------
 ;; Editing modes
 ;;----------------------------------------------------------------------------
@@ -81,6 +62,8 @@
 	("\\.te?xt\\'" . text-mode)
 	("\\.c\\'" . c-mode)
 	("\\.h\\'" . c++-mode)
+        ("\\.adoc\\'" . adoc-mode)
+        ("\\.d\\'" . d-mode)
 	("\\.tex$" . LaTeX-mode)
 	("\\.sty$" . LaTeX-mode)
 	("\\.bbl$" . LaTeX-mode)
@@ -115,7 +98,7 @@
 	("\\(M\\|m\\|GNUm\\)akefile\\(\\.in\\)?" . makefile-mode)
 	("\\.am\\'" . makefile-mode)
 	("\\.mms\\'" . makefile-mode)
-        ("CMakeLists\\.txt\\'" . cmake-mode)
+        ("CMakeLists.txt\\'" . cmake-mode)
         ("\\.cmake\\'" . cmake-mode)
 	("\\.texinfo\\'" . texinfo-mode)
 	("\\.te?xi\\'" . texinfo-mode)
@@ -223,6 +206,9 @@
                     ;(setq inhibit-startup-message t)
 ;; Make all "yes or no" prompts show "y or n" instead
 (fset 'yes-or-no-p 'y-or-n-p)
+
+;; Delete selection when writing over it
+(delete-selection-mode 1)
 
 ;; Make M-q equivalent to yank
 (require 'bind-key)
@@ -388,7 +374,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (zygospore yasnippet ws-butler volatile-highlights use-package undo-tree sr-speedbar rtags rpm-spec-mode neotree json-mode iedit helm-swoop helm-projectile helm-gtags ggtags dtrt-indent d-mode company cmake-ide clean-aindent-mode anzu))))
+    (adoc-mode zygospore yasnippet ws-butler volatile-highlights use-package undo-tree sr-speedbar rtags rpm-spec-mode neotree json-mode iedit helm-swoop helm-projectile helm-gtags ggtags dtrt-indent d-mode company cmake-ide clean-aindent-mode anzu))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -403,4 +389,6 @@
 (global-set-key (kbd "M-x") #'helm-M-x)
 (global-set-key (kbd "C-x r b") #'helm-filtered-bookmarks)
 (global-set-key (kbd "C-x C-f") #'helm-find-files)
+(with-eval-after-load 'helm
+  (define-key helm-map (kbd "TAB") #'helm-maybe-exit-minibuffer))
 (helm-mode 1)
